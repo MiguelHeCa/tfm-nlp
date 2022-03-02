@@ -1,0 +1,110 @@
+Text language is: es
+
+El el DA0MS0 
+gato gato NCMS000 02121620-n:0/02122298-n:0/02122725-n:0/02983507-n:0/10022759-n:0
+come comer VMIP3S0 01156834-v:0/01157517-v:0/01166351-v:0/01168468-v:0/01179865-v:0/01185304-v:0
+pescado pescado NCMS000 02512053-n:0/02512938-n:0/07775375-n:0
+. . Fp 
+
++grup-verb_[
+  sn_[
+    espec-ms_[
+      +j-ms_[
+        +(El el DA0MS0)
+      ]
+    ]
+    +grup-nom-ms_[
+      +n-ms_[
+        +(gato gato NCMS000)
+      ]
+    ]
+  ]
+  +verb_[
+    +(come comer VMIP3S0)
+  ]
+  sn_[
+    +grup-nom-ms_[
+      +n-ms_[
+        +(pescado pescado NCMS000)
+      ]
+    ]
+  ]
+  F-term_[
+    +(. . Fp)
+  ]
+]
+grup-verb/top/(come comer VMIP3S0) [
+  sn/subj/(gato gato NCMS000) [
+    espec-ms/spec/(El el DA0MS0)
+  ]
+  sn/dobj/(pescado pescado NCMS000)
+  F-term/punc/(. . Fp)
+]
+Pero pero CC 
+a a SP 
+Don_Jaime don_jaime NP00000 
+no no RN 00024073-r:0/00024356-r:0/00024587-r:0/00118531-r:0
+le le PP3CSD0 
+gustan gustar VMIP3P0 00597061-v:0/01195299-v:0/01776952-v:0/01777210-v:0/01815628-v:0/01816431-v:0/01820302-v:0/01824736-v:0
+los el DA0MP0 
+gatos gato NCMP000 02121620-n:0/02122298-n:0/02122725-n:0/02983507-n:0/10022759-n:0
+. . Fp 
+
++coor-sp_[
+  +(Pero pero CC)
+  grup-sp_[
+    +prep_[
+      +(a a SP)
+    ]
+    sn_[
+      +grup-nom-ms_[
+        +w-ms_[
+          +(Don_Jaime don_jaime NP00000)
+        ]
+      ]
+    ]
+  ]
+  grup-verb_[
+    neg_[
+      +(no no RN)
+    ]
+    patons_[
+      +paton-s_[
+        +(le le PP3CSD0)
+      ]
+    ]
+    +grup-verb_[
+      +verb_[
+        +(gustan gustar VMIP3P0)
+      ]
+    ]
+    sn_[
+      espec-mp_[
+        +j-mp_[
+          +(los el DA0MP0)
+        ]
+      ]
+      +grup-nom-mp_[
+        +n-mp_[
+          +(gatos gato NCMP000)
+        ]
+      ]
+    ]
+    F-term_[
+      +(. . Fp)
+    ]
+  ]
+]
+coor-sp/top/(Pero pero CC) [
+  grup-sp/coor/(a a SP) [
+    sn/comp/(Don_Jaime don_jaime NP00000)
+  ]
+  grup-verb/modnomatch/(gustan gustar VMIP3P0) [
+    patons/iobj/(le le PP3CSD0)
+    neg/spec/(no no RN)
+    sn/modnomatch/(gatos gato NCMP000) [
+      espec-mp/spec/(los el DA0MP0)
+    ]
+    F-term/punc/(. . Fp)
+  ]
+]
