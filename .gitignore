@@ -130,3 +130,6 @@ dmypy.json
 
 # Enron mails
 /maildir
+
+# JetBrains
+.idea/
