@@ -6,14 +6,10 @@ Main program for to parse mails
 """
 
 import argparse
-# import sys
 import os
 
-# import pyfreeling
 import parser
 import analyzer
-
-# from pathlib import Path
 
 
 def main():
@@ -40,13 +36,14 @@ def main():
     email_list.sort(key=lambda x: x[0])
     pureThreads = parser.obtain_raw_threads(mail_dict, email_list)
 
-    email_sample = email_list[0][1].get_payload()
-    print(email_sample)
-
-    # Analyze emails
-    fla = analyzer.freeling_analyzer(basedir, args['lang'])
-    fla.setup()
-    fla.process(email_sample)
+    print(parser.obtain_features(email_list[:30]))
+    # email_sample = email_list[0][1].get_payload()
+    # print(email_sample)
+    #
+    # # Analyze emails
+    # fla = analyzer.freeling_analyzer(basedir, args['lang'])
+    # fla.setup()
+    # fla.process(email_sample)
 
 
 if __name__ == "__main__":

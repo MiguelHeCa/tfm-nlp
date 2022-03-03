@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-Output parser for the analyzer
+Freeling analyzer with configurations
 """
 import sys
 import os
@@ -20,7 +20,6 @@ class freeling_analyzer(object):
         self.mf = None
         self.tg = None
         self.sen = None
-        self.parser = None
         self.dep = None
 
     # ------------  output a parse tree ------------
@@ -116,10 +115,6 @@ class freeling_analyzer(object):
 
         # Init locales
         pyfreeling.util_init_locale("default")
-
-        # create language detector. Used just to show it. Results are printed
-        # but ignored (after, it is assumed language is LANG)
-        # la = pyfreeling.lang_ident(DATA + "common/lang_ident/ident-few.dat")
 
         # create options set for maco analyzer.
         # Default values are Ok, except for data files.

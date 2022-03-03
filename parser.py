@@ -1,7 +1,8 @@
-import os
-from email.parser import Parser
-import email.utils
+import re
 import time
+import email.utils
+
+from email.parser import Parser
 
 
 def messageIDtoSubject(mail_dict, messageID):
@@ -42,3 +43,26 @@ def obtain_raw_threads(mail_dict, email_list):
         childThread = subject_dict[subject]
         threads[mail] = childThread
     return threads
+
+
+def preprocess_recipients(recipient):
+    if recipient is not None:
+        users = re.sub(r'\s+', '', recipient).split(',')
+        if len(users) > 1:
+            return users
+        else:
+            return users[0]
+    else:
+        return None
+
+
+def obtain_features(email_list):
+    email_dict = {}
+    for num, mail in email_list:
+        email_dict[mail['message-id']] = {
+            'from': mail['from'],
+            'to': preprocess_recipients(mail['to']),
+            'date': mail['date'],
+            'features': {}
+        }
+    return email_dict
