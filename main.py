@@ -45,6 +45,7 @@ def main():
 
     # Analyze emails
     fla = analyzer.freeling_analyzer(basedir, args['lang'])
+    fla.setup()
     fla.process(email_sample)
 
 

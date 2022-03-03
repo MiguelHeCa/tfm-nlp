@@ -60,9 +60,7 @@ class freeling_analyzer(object):
         print("".rjust(depth * 2), end="")
 
         info = node.get_info()
-        link = info.get_link()
-        linfo = link.get_info()
-        print("{0}/{1}/".format(link.get_info().get_label(), info.get_label()), end="")
+        print(info.get_label() + "/", end="")
 
         w = node.get_info().get_word()
         print("({0} {1} {2})".format(w.get_form(), w.get_lemma(), w.get_tag()), end="")
@@ -107,8 +105,8 @@ class freeling_analyzer(object):
             print(
                 "Folder",
                 os.environ["FREELINGDIR"] + "/share/freeling",
-                "not found.\n" +
-                "Please set FREELINGDIR environment variable to FreeLing installation directory",
+                "not found.\n"
+                + "Please set FREELINGDIR environment variable to FreeLing installation directory",
                 file=sys.stderr,
             )
             sys.exit(1)
@@ -165,16 +163,9 @@ class freeling_analyzer(object):
         # create tagger, sense anotator, and parsers
         self.tg = pyfreeling.hmm_tagger(DATA + LANG + "/tagger.dat", True, 2)
         self.sen = pyfreeling.senses(DATA + LANG + "/senses.dat")
-        self.parser = pyfreeling.chart_parser(
-            DATA + LANG + "/chunker/grammar-chunk.dat"
-        )
-        self.dep = pyfreeling.dep_txala(
-            DATA + LANG + "/dep_txala/dependences.dat", self.parser.get_start_symbol()
-        )
+        self.dep = pyfreeling.dep_lstm(DATA + LANG + "/dep_lstm/params-en.dat")
 
     def process(self, msg):
-        self.setup()
-
         for lin in io.StringIO(msg):
             l = self.tk.tokenize(lin)
             ls = self.sp.split(self.sid, l, False)
@@ -182,7 +173,6 @@ class freeling_analyzer(object):
             ls = self.mf.analyze(ls)
             ls = self.tg.analyze(ls)
             ls = self.sen.analyze(ls)
-            ls = self.parser.analyze(ls)
             ls = self.dep.analyze(ls)
 
             # output results
@@ -199,9 +189,6 @@ class freeling_analyzer(object):
                         + w.get_senses_string()
                     )
                 print("")
-
-                tr = s.get_parse_tree()
-                self.printTree(tr, 0)
 
                 dp = s.get_dep_tree()
                 self.printDepTree(dp, 0)
