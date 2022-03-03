@@ -1,0 +1,498 @@
+On behalf of Jeff Skilling, I'm writing to encourage you to join the Harvard 
+Business School Club of Houston.  Benefits of the club are:
+
+Interesting speaker and panel programs
+Stimulate discussion of current business/social problems
+Promote business/social relationships among area alumni
+Bring HBS news to area alumni
+Communicate area alumni views to the alumni office
+Assist/facilitate MBA student/local employer contacts
+Provide community service
+Cooperate with the Alumni office to strengthen the local club and encourage 
+the establishment of new clubs.
+
+On on IN 
+behalf behalf NN 00721660-n:0/05143300-n:0
+of of IN 
+Jeff_Skilling jeff_skilling NP 
+, , Fc 
+I i PRP 
+am be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+writing write VBG 00993014-v:0/00998886-v:0/01007027-v:0/01031966-v:0/01691057-v:0/01692834-v:0/01698271-v:0/01699896-v:0/01705494-v:0/01744611-v:0
+to to TO 
+encourage encourage VB 00771341-v:0/01818235-v:0/02554922-v:0
+you you PRP 
+to to TO 
+join join VB 01291069-v:0/01295275-v:0/02434976-v:0/02598765-v:0/02622234-v:0
+the the DT 
+Harvard_Business_School_Club_of_Houston harvard_business_school_club_of_houston NP 
+. . Fp 
+
++claus_[
+  adv_[
+    +(On on IN)
+    n-chunk_[
+      +(behalf behalf NN)
+      sp-chunk_[
+        +(of of IN)
+        n-chunk_[
+          +(Jeff_Skilling jeff_skilling NP)
+        ]
+      ]
+    ]
+    sf-brk_[
+      +(, , Fc)
+    ]
+  ]
+  sn-chunk_[
+    +(I i PRP)
+  ]
+  vb-be_[
+    +(am be VBP)
+  ]
+  +vb-chunk_[
+    +(writing write VBG)
+  ]
+  inf-mk_[
+    +(to to TO)
+    inf_[
+      +(encourage encourage VB)
+      sn-chunk_[
+        +(you you PRP)
+      ]
+    ]
+  ]
+  inf-mk_[
+    +(to to TO)
+    inf_[
+      +(join join VB)
+      sn-chunk_[
+        (the the DT)
+        +n-chunk_[
+          +(Harvard_Business_School_Club_of_Houston harvard_business_school_club_of_houston NP)
+        ]
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(writing write VBG) [
+  vb-be/aux/(am be VBP)
+  adv/ncmod/(On on IN) [
+    n-chunk/dobj/(behalf behalf NN) [
+      sp-chunk/ncmod/(of of IN) [
+        n-chunk/dobj/(Jeff_Skilling jeff_skilling NP)
+      ]
+    ]
+    sf-brk/ta/(, , Fc)
+  ]
+  sn-chunk/ncsubj/(I i PRP)
+  inf-mk/iobj/(to to TO) [
+    inf/cmod/(encourage encourage VB) [
+      sn-chunk/dobj/(you you PRP)
+    ]
+  ]
+  inf-mk/iobj/(to to TO) [
+    inf/cmod/(join join VB) [
+      sn-chunk/dobj/(Harvard_Business_School_Club_of_Houston harvard_business_school_club_of_houston NP) [
+        DT/det/(the the DT)
+      ]
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]
+Benefits benefit NNS 05142641-n:0/06892534-n:0/13296899-n:0
+of of IN 
+the the DT 
+club club NN 02931417-n:0/03053474-n:0/03053788-n:0/03054311-n:0/03446070-n:0/08079613-n:0/08227214-n:0
+are be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+: : Fd 
+Interesting interest VBG 01821423-v:0/02678438-v:0/02678663-v:0/01343918-a:0
+speaker speaker NN 03691459-n:0/10630188-n:0/10631309-n:0
+and and CC 
+panel panel NN 03098140-n:0/03187268-n:0/03448253-n:0/03882058-n:0/03882346-n:0/08414381-n:0/08414608-n:0/08414807-n:0
+programs program NNS 00551215-n:0/05898568-n:0/05899087-n:0/06501311-n:0/06568978-n:0/06619428-n:0/06676416-n:0/06748466-n:0
+Stimulate stimulate NP 
+discussion discussion NN 07138085-n:0/07140659-n:0
+of of IN 
+current current JJ 00666058-a:0
+business business NN 00550341-n:0/00582388-n:0/01094725-n:0/01096245-n:0/05833022-n:0/05983801-n:0/07966927-n:0/08061042-n:0/08401554-n:0
+/ / Fh 
+social social JJ 01076634-a:0/02248349-a:0/02252877-a:0/02258360-a:0/02798370-a:0/02798597-a:0
+problems problem NNS 05687338-n:0/06784003-n:0/14410605-n:0
+Promote promote NP 
+business business NN 00550341-n:0/00582388-n:0/01094725-n:0/01096245-n:0/05833022-n:0/05983801-n:0/07966927-n:0/08061042-n:0/08401554-n:0
+/ / Fh 
+social social JJ 01076634-a:0/02248349-a:0/02252877-a:0/02258360-a:0/02798370-a:0/02798597-a:0
+relationships relationship NNS 13780719-n:0/13812607-n:0/13928388-n:0/13928668-n:0
+among among IN 
+area area NN 02735688-n:0/05128519-n:0/05221895-n:0/05815517-n:0/08497294-n:0/14514039-n:0
+alumni alumnus NNS 09786338-n:0
+Bring_HBS bring_hbs NP 
+news news NN 05192897-n:0/06619850-n:0/06642138-n:0/06642356-n:0/06681177-n:0
+to to TO 
+area area NN 02735688-n:0/05128519-n:0/05221895-n:0/05815517-n:0/08497294-n:0/14514039-n:0
+alumni alumnus NNS 09786338-n:0
+Communicate communicate NP 
+area area NN 02735688-n:0/05128519-n:0/05221895-n:0/05815517-n:0/08497294-n:0/14514039-n:0
+alumni alumnus NNS 09786338-n:0
+views view NNS 00881649-n:0/04144782-n:0/04674861-n:0/05127782-n:0/05933246-n:0/05945642-n:0/05983463-n:0/06208751-n:0/06782019-n:0/08560952-n:0
+to to TO 
+the the DT 
+alumni alumnus NNS 09786338-n:0
+office office NN 00586262-n:0/00720565-n:0/01033458-n:0/03841666-n:0/08337324-n:0/08352303-n:0/13945102-n:0
+Assist assist NP 00558008-n:0/01207609-n:0
+/ / Fh 
+facilitate facilitate VB 00518395-v:0/01757338-v:0/02735897-v:0
+MBA mba NP 06701359-n:0
+student student NN 10557854-n:0/10665698-n:0
+/ / Fh 
+local local JJ 01106405-a:0/01425529-a:0/02756346-a:0
+employer employer NN 10054657-n:0
+contacts contact NNS 00039297-n:0/00124880-n:0/03093792-n:0/03094159-n:0/06261260-n:0/07279285-n:0/07339329-n:0/09960117-n:0/14419510-n:0
+Provide provide NP 
+community community NN 07941729-n:0/08223802-n:0/08224274-n:0/08553535-n:0/13240839-n:0/13971382-n:0
+service service NN 00098625-n:0/00268112-n:0/00318391-n:0/00568430-n:0/00577525-n:0/00579564-n:0/00584891-n:0/00853649-n:0/01032040-n:0/01209576-n:0/04175380-n:0/05149832-n:0/08186047-n:0/08198137-n:0/11293636-n:0
+Cooperate cooperate NP 
+with with IN 
+the the DT 
+Alumni alumni NP 
+office office NN 00586262-n:0/00720565-n:0/01033458-n:0/03841666-n:0/08337324-n:0/08352303-n:0/13945102-n:0
+to to TO 
+strengthen strengthen VB 00101277-v:0/00220461-v:0/00220869-v:0
+the the DT 
+local local JJ 01106405-a:0/01425529-a:0/02756346-a:0
+club club NN 02931417-n:0/03053474-n:0/03053788-n:0/03054311-n:0/03446070-n:0/08079613-n:0/08227214-n:0
+and and CC 
+encourage encourage VB 00771341-v:0/01818235-v:0/02554922-v:0
+the the DT 
+establishment establishment NN 00237078-n:0/03297735-n:0/05826291-n:0/08053576-n:0/08075847-n:0/08164585-n:0/13476267-n:0
+of of IN 
+new new JJ 00024996-a:0/00128733-a:0/00818008-a:0/00820975-a:0/00821208-a:0/00937186-a:0/01640850-a:0/01687167-a:0/01687965-a:0/02070491-a:0/02584699-a:0
+clubs club NNS 02931417-n:0/03053474-n:0/03053788-n:0/03054311-n:0/03446070-n:0/08079613-n:0/08227214-n:0
+. . Fp 
+
++sv-coor_[
+  sv_[
+    n-chunk_[
+      +(Benefits benefit NNS)
+      sp-chunk_[
+        +(of of IN)
+        sn-chunk_[
+          (the the DT)
+          +n-chunk_[
+            +(club club NN)
+          ]
+        ]
+      ]
+    ]
+    +(are be VBP)
+    sf-brk_[
+      +(: : Fd)
+    ]
+    part_[
+      +(Interesting interest VBG)
+      sn-coor_[
+        n-chunk_[
+          +(speaker speaker NN)
+        ]
+        +(and and CC)
+        n-chunk_[
+          (panel panel NN)
+          +n-chunk_[
+            (programs program NNS)
+            +n-chunk_[
+              (Stimulate stimulate NP)
+              +n-chunk_[
+                +(discussion discussion NN)
+              ]
+            ]
+          ]
+        ]
+      ]
+      sp-chunk_[
+        +(of of IN)
+        n-chunk_[
+          attrib_[
+            +(current current JJ)
+          ]
+          +n-chunk_[
+            +(business business NN)
+          ]
+        ]
+      ]
+    ]
+    oth-mk_[
+      +(/ / Fh)
+    ]
+    n-chunk_[
+      attrib_[
+        +(social social JJ)
+      ]
+      +n-chunk_[
+        (problems problem NNS)
+        +n-chunk_[
+          (Promote promote NP)
+          +n-chunk_[
+            +(business business NN)
+          ]
+        ]
+      ]
+    ]
+    oth-mk_[
+      +(/ / Fh)
+    ]
+    n-chunk_[
+      attrib_[
+        +(social social JJ)
+      ]
+      +n-chunk_[
+        +(relationships relationship NNS)
+      ]
+    ]
+    sp-chunk_[
+      +(among among IN)
+      n-chunk_[
+        (area area NN)
+        +n-chunk_[
+          (alumni alumnus NNS)
+          +n-chunk_[
+            (Bring_HBS bring_hbs NP)
+            +n-chunk_[
+              +(news news NN)
+            ]
+          ]
+        ]
+      ]
+    ]
+    sp-chunk_[
+      +(to to TO)
+      n-chunk_[
+        (area area NN)
+        +n-chunk_[
+          (alumni alumnus NNS)
+          +n-chunk_[
+            (Communicate communicate NP)
+            +n-chunk_[
+              (area area NN)
+              +n-chunk_[
+                (alumni alumnus NNS)
+                +n-chunk_[
+                  +(views view NNS)
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+    sp-chunk_[
+      +(to to TO)
+      sn-chunk_[
+        (the the DT)
+        +n-chunk_[
+          (alumni alumnus NNS)
+          +n-chunk_[
+            (office office NN)
+            +n-chunk_[
+              +(Assist assist NP)
+            ]
+          ]
+        ]
+      ]
+    ]
+    oth-mk_[
+      +(/ / Fh)
+    ]
+    sv_[
+      +(facilitate facilitate VB)
+      n-chunk_[
+        (MBA mba NP)
+        +n-chunk_[
+          +(student student NN)
+        ]
+      ]
+    ]
+    oth-mk_[
+      +(/ / Fh)
+    ]
+    n-chunk_[
+      attrib_[
+        +(local local JJ)
+      ]
+      +n-chunk_[
+        (employer employer NN)
+        +n-chunk_[
+          (contacts contact NNS)
+          +n-chunk_[
+            (Provide provide NP)
+            +n-chunk_[
+              (community community NN)
+              +n-chunk_[
+                (service service NN)
+                +n-chunk_[
+                  +(Cooperate cooperate NP)
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+    sp-chunk_[
+      +(with with IN)
+      sn-chunk_[
+        (the the DT)
+        +n-chunk_[
+          (Alumni alumni NP)
+          +n-chunk_[
+            +(office office NN)
+          ]
+        ]
+      ]
+    ]
+    inf-mk_[
+      +(to to TO)
+      inf_[
+        +(strengthen strengthen VB)
+        sn-chunk_[
+          (the the DT)
+          +n-chunk_[
+            attrib_[
+              +(local local JJ)
+            ]
+            +n-chunk_[
+              +(club club NN)
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+  +(and and CC)
+  sv_[
+    +(encourage encourage VB)
+    sn-chunk_[
+      (the the DT)
+      +n-chunk_[
+        +(establishment establishment NN)
+      ]
+      sp-chunk_[
+        +(of of IN)
+        n-chunk_[
+          attrib_[
+            +(new new JJ)
+          ]
+          +n-chunk_[
+            +(clubs club NNS)
+          ]
+        ]
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+sv-coor/top/(and and CC) [
+  sv/conj/(are be VBP) [
+    n-chunk/ncsubj/(Benefits benefit NNS) [
+      sp-chunk/ncmod/(of of IN) [
+        sn-chunk/dobj/(club club NN) [
+          DT/det/(the the DT)
+        ]
+      ]
+    ]
+    sf-brk/ta/(: : Fd)
+    part/ccomp/(Interesting interest VBG) [
+      sn-coor/dobj/(and and CC) [
+        n-chunk/conj/(speaker speaker NN)
+        n-chunk/conj/(discussion discussion NN) [
+          NN/ncmod/(panel panel NN)
+          NNS/ncmod/(programs program NNS)
+          NP/ncmod/(Stimulate stimulate NP)
+        ]
+      ]
+      sp-chunk/ncmod/(of of IN) [
+        n-chunk/dobj/(business business NN) [
+          attrib/ncmod/(current current JJ)
+        ]
+      ]
+    ]
+    oth-mk/ta/(/ / Fh)
+    n-chunk/dobj/(business business NN) [
+      attrib/ncmod/(social social JJ)
+      NNS/ncmod/(problems problem NNS)
+      NP/ncmod/(Promote promote NP)
+    ]
+    oth-mk/ta/(/ / Fh)
+    n-chunk/dobj/(relationships relationship NNS) [
+      attrib/ncmod/(social social JJ)
+    ]
+    sp-chunk/ncmod/(among among IN) [
+      n-chunk/dobj/(news news NN) [
+        NN/ncmod/(area area NN)
+        NNS/ncmod/(alumni alumnus NNS)
+        NP/ncmod/(Bring_HBS bring_hbs NP)
+      ]
+    ]
+    sp-chunk/ncmod/(to to TO) [
+      n-chunk/dobj/(views view NNS) [
+        NN/ncmod/(area area NN)
+        NNS/ncmod/(alumni alumnus NNS)
+        NP/ncmod/(Communicate communicate NP)
+        NN/ncmod/(area area NN)
+        NNS/ncmod/(alumni alumnus NNS)
+      ]
+    ]
+    sp-chunk/iobj/(to to TO) [
+      sn-chunk/dobj/(Assist assist NP) [
+        DT/det/(the the DT)
+        NNS/ncmod/(alumni alumnus NNS)
+        NN/ncmod/(office office NN)
+      ]
+    ]
+    oth-mk/ta/(/ / Fh)
+    sv/cmod/(facilitate facilitate VB) [
+      n-chunk/dobj/(student student NN) [
+        NP/ncmod/(MBA mba NP)
+      ]
+    ]
+    oth-mk/ta/(/ / Fh)
+    n-chunk/dobj/(Cooperate cooperate NP) [
+      attrib/ncmod/(local local JJ)
+      NN/ncmod/(employer employer NN)
+      NNS/ncmod/(contacts contact NNS)
+      NP/ncmod/(Provide provide NP)
+      NN/ncmod/(community community NN)
+      NN/ncmod/(service service NN)
+    ]
+    sp-chunk/ncmod/(with with IN) [
+      sn-chunk/dobj/(office office NN) [
+        DT/det/(the the DT)
+        NP/ncmod/(Alumni alumni NP)
+      ]
+    ]
+    inf-mk/iobj/(to to TO) [
+      inf/cmod/(strengthen strengthen VB) [
+        sn-chunk/dobj/(club club NN) [
+          DT/det/(the the DT)
+          attrib/ncmod/(local local JJ)
+        ]
+      ]
+    ]
+  ]
+  sv/conj/(encourage encourage VB) [
+    sn-chunk/dobj/(establishment establishment NN) [
+      DT/det/(the the DT)
+      sp-chunk/ncmod/(of of IN) [
+        n-chunk/dobj/(clubs club NNS) [
+          attrib/ncmod/(new new JJ)
+        ]
+      ]
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]

@@ -1,0 +1,1894 @@
+Letter dictated by Ken Lay
+
+
+
+Hello Janice:
+
+ I enjoyed your recent e-mail but was sorry to hear about your dad.  It 
+sounds as though his health has deteriorated significantly.  These are always 
+difficult times.  As I watched my mother and father's health deteriorate and 
+ultimately watched them die, it is a very defining time in our lives.  But we 
+can be very thankful to have such great parents and to have been privilege to 
+be raised in such loving homes.
+
+ Sounds as though Eric has done very well as SMSU.  He is joining an 
+excellent company.  I am also delighted to hear that he will continue his 
+education working toward an MBA.  As we are living in an age were 
+intellectual capital is so valuable, it is important for every young person 
+to obtain the very best possible education they can.  As to our family, 
+within the last ten days our youngest daughter Elizabeth was married to a 
+young man from Buenos Aires, Argentina.  They met while they were both 
+working on a project as lawyers in Buenos Aires.  They're currently on their 
+honeymoon but shortly after returning will be moving from Buenos Aires to 
+Miami, Florida.  This past Thursday night our sixth grandchild was born.  It 
+was born to our son David and his wife Courtney.  It was a 7 lb., 10 oz.,  20 
+inch little boy.  So we now have three grandsons and three granddaughters 
+ranging from about 2 years - 4 months down to a few days.  They are a great 
+deal of fun.  We are doing quite well.  I am looking forward to seeing Ginger 
+"Rees" Copeland when she comes to Houston.  I would be delighted to arrange 
+tickets for you and your family should you ever have occasion to visit 
+Houston.
+
+ I hope you have a great summer.
+
+
+
+cc:  Bonnie Bourne
+        Sharon Lay
+Letter letter NN 06624161-n:0/06706504-n:0/06828818-n:0/07173389-n:0/10255207-n:0
+dictated dictate VBD 00626890-v:0/00747135-v:0/02587084-v:0
+by by IN 
+Ken_Lay_Hello_Janice ken_lay_hello_janice NP 
+: : Fd 
+I i PRP 
+enjoyed enjoy VBD 01190948-v:0/01192510-v:0/01820302-v:0/01828736-v:0/02110793-v:0
+your your PRP$ 
+recent recent JJ 01642477-a:0/01730444-a:0
+e-mail email NN 06279326-n:0
+but but CC 
+was be VBD 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+sorry sorry JJ 00364881-a:0/01126841-a:0/01150475-a:0/02502578-a:0
+to to TO 
+hear hear VB 00598954-v:0/02107442-v:0/02169702-v:0/02171039-v:0/02500902-v:0
+about about IN 
+your your PRP$ 
+dad dad NN 09988063-n:0
+. . Fp 
+
++claus_[
+  n-chunk_[
+    +(Letter letter NN)
+  ]
+  +(dictated dictate VBD)
+  sp-chunk_[
+    +(by by IN)
+    n-chunk_[
+      +(Ken_Lay_Hello_Janice ken_lay_hello_janice NP)
+    ]
+  ]
+  sf-brk_[
+    +(: : Fd)
+  ]
+  sv_[
+    sn-chunk_[
+      +(I i PRP)
+    ]
+    +(enjoyed enjoy VBD)
+    sn-chunk_[
+      (your your PRP$)
+      +n-chunk_[
+        attrib_[
+          +(recent recent JJ)
+        ]
+        +n-chunk_[
+          +(e-mail email NN)
+        ]
+      ]
+    ]
+  ]
+  nex-coord_[
+    +(but but CC)
+  ]
+  vb-be_[
+    +(was be VBD)
+  ]
+  attrib_[
+    +(sorry sorry JJ)
+  ]
+  inf-mk_[
+    +(to to TO)
+    inf_[
+      +(hear hear VB)
+      sp-chunk_[
+        +(about about IN)
+        sn-chunk_[
+          (your your PRP$)
+          +n-chunk_[
+            +(dad dad NN)
+          ]
+        ]
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(dictated dictate VBD) [
+  n-chunk/ncsubj/(Letter letter NN)
+  sp-chunk/ncmod/(by by IN) [
+    n-chunk/dobj/(Ken_Lay_Hello_Janice ken_lay_hello_janice NP)
+  ]
+  sf-brk/ta/(: : Fd)
+  sv/cmod/(enjoyed enjoy VBD) [
+    sn-chunk/ncsubj/(I i PRP)
+    sn-chunk/dobj/(e-mail email NN) [
+      PRP$/ncmod-poss/(your your PRP$)
+      attrib/ncmod/(recent recent JJ)
+    ]
+  ]
+  nex-coord/modnomatch/(but but CC)
+  vb-be/aux/(was be VBD)
+  attrib/ncmod/(sorry sorry JJ)
+  inf-mk/iobj/(to to TO) [
+    inf/cmod/(hear hear VB) [
+      sp-chunk/ncmod/(about about IN) [
+        sn-chunk/dobj/(dad dad NN) [
+          PRP$/ncmod-poss/(your your PRP$)
+        ]
+      ]
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]
+It it PRP 
+sounds sound VBZ 00491689-v:0/00952182-v:0/02134927-v:0/02135048-v:0/02176268-v:0/02179518-v:0/02180529-v:0
+as as IN 
+though though IN 
+his his PRP$ 
+health health NN 13923779-n:0/14447908-n:0
+has have VBZ 00056930-v:0/00065370-v:0/00065639-v:0/00120796-v:0/00121046-v:0/00770437-v:0/01156834-v:0/01427127-v:0/01733477-v:0/02108026-v:0/02203362-v:0/02204692-v:0/02205098-v:0/02210119-v:0/02236124-v:0/02355596-v:0/02378453-v:0/02630189-v:0/02740745-v:0
+deteriorated deteriorate VBN 00092293-v:0/00208497-v:0
+significantly significantly RB 00006259-r:0/00367868-r:0/00509970-r:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(It it PRP)
+  ]
+  +(sounds sound VBZ)
+  adv_[
+    +(as as IN)
+  ]
+  sp-chunk_[
+    +(though though IN)
+    sv_[
+      sn-chunk_[
+        (his his PRP$)
+        +n-chunk_[
+          +(health health NN)
+        ]
+      ]
+      vb-have_[
+        +(has have VBZ)
+      ]
+      +vb-chunk_[
+        +(deteriorated deteriorate VBN)
+      ]
+      adv_[
+        +(significantly significantly RB)
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(sounds sound VBZ) [
+  sn-chunk/ncsubj/(It it PRP)
+  adv/ncmod/(as as IN)
+  sp-chunk/ncmod/(though though IN) [
+    sv/cmod/(deteriorated deteriorate VBN) [
+      vb-have/aux/(has have VBZ)
+      sn-chunk/ncsubj/(health health NN) [
+        PRP$/ncmod-poss/(his his PRP$)
+      ]
+      adv/ncmod/(significantly significantly RB)
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]
+These these DT 
+are be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+always always RB 00019339-r:0/00019609-r:0/00019757-r:0/00020280-r:0/00020476-r:0
+difficult difficult JJ 00744916-a:0/01475282-a:0
+times time NNS 00028270-n:0/04991738-n:0/07288215-n:0/07309599-n:0/15122231-n:0/15129927-n:0/15135822-n:0/15224692-n:0/15245515-n:0/15270431-n:0
+. . Fp 
+
++DT_[
+  +(These these DT)
+  vb-be_[
+    +(are be VBP)
+  ]
+  n-chunk_[
+    attrib_[
+      adv_[
+        +(always always RB)
+      ]
+      +attrib_[
+        +(difficult difficult JJ)
+      ]
+    ]
+    +n-chunk_[
+      +(times time NNS)
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+DT/top/(These these DT) [
+  vb-be/modnorule/(are be VBP)
+  n-chunk/modnorule/(times time NNS) [
+    attrib/ncmod/(difficult difficult JJ) [
+      adv/ncmod/(always always RB)
+    ]
+  ]
+  st-brk/modnorule/(. . Fp)
+]
+As as IN 
+I i PRP 
+watched watch VBD 00920336-v:0/02128653-v:0/02131963-v:0/02150510-v:0/02150948-v:0/02151966-v:0/02455407-v:0
+my my PRP$ 
+mother mother NN 05835292-n:0/10332385-n:0/10332861-n:0/10332953-n:0/15106674-n:0
+and and CC 
+father father NN 09536973-n:0/09921792-n:0/10025295-n:0/10080869-n:0/10081204-n:0/10081456-n:0/10102800-n:0/10107303-n:0
+'s 's POS 
+health health NN 13923779-n:0/14447908-n:0
+deteriorate deteriorate VB 00092293-v:0/00208497-v:0
+and and CC 
+ultimately ultimately RB 00047903-r:0
+watched watch VBD 00920336-v:0/02128653-v:0/02131963-v:0/02150510-v:0/02150948-v:0/02151966-v:0/02455407-v:0
+them them PRP 
+die die VBP 00224295-v:0/00354845-v:0/00358431-v:0/00434374-v:0/00538323-v:0/01074914-v:0/01555034-v:0/01784953-v:0/01785242-v:0/01829475-v:0/02109818-v:0
+, , Fc 
+it it PRP 
+is be VBZ 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+a a DT 
+very very RB 00031899-r:0/00510749-r:0
+defining define VBG 00947077-v:0/00957378-v:0/02611630-v:0/02698319-v:0/02736778-v:0
+time time NN 00028270-n:0/04991738-n:0/07288215-n:0/07309599-n:0/15122231-n:0/15129927-n:0/15135822-n:0/15224692-n:0/15245515-n:0/15270431-n:0
+in in IN 
+our our PRP$ 
+lives life NNS 00006269-n:0/04632157-n:0/05810561-n:0/06515827-n:0/09178727-n:0/10260706-n:0/11473291-n:0/13961399-n:0/13961642-n:0/13963192-n:0/15140405-n:0/15140744-n:0/15140892-n:0/15225076-n:0
+. . Fp 
+
++sv-coor_[
+  sv_[
+    adv_[
+      +(As as IN)
+    ]
+    sn-chunk_[
+      +(I i PRP)
+    ]
+    +(watched watch VBD)
+    sn-chunk_[
+      (my my PRP$)
+      +n-chunk_[
+        +(mother mother NN)
+      ]
+    ]
+    sn-co_[
+      +(and and CC)
+      n-chunk_[
+        (father father NN)
+        +n-ngen_[
+          ('s 's POS)
+          +n-chunk_[
+            +(health health NN)
+          ]
+        ]
+      ]
+    ]
+    vb-chunk_[
+      +(deteriorate deteriorate VB)
+    ]
+  ]
+  +(and and CC)
+  sv_[
+    adv_[
+      +(ultimately ultimately RB)
+    ]
+    +(watched watch VBD)
+    sv_[
+      sn-chunk_[
+        +(them them PRP)
+      ]
+      +(die die VBP)
+      sf-brk_[
+        +(, , Fc)
+      ]
+    ]
+  ]
+  sv_[
+    sn-chunk_[
+      +(it it PRP)
+    ]
+    +(is be VBZ)
+  ]
+  DT_[
+    +(a a DT)
+  ]
+  claus_[
+    adv_[
+      +(very very RB)
+    ]
+    +(defining define VBG)
+    n-chunk_[
+      +(time time NN)
+    ]
+    sp-chunk_[
+      +(in in IN)
+      sn-chunk_[
+        (our our PRP$)
+        +n-chunk_[
+          +(lives life NNS)
+        ]
+      ]
+    ]
+    st-brk_[
+      +(. . Fp)
+    ]
+  ]
+]
+sv-coor/top/(and and CC) [
+  sv/conj/(watched watch VBD) [
+    adv/ncmod/(As as IN)
+    sn-chunk/ncsubj/(I i PRP)
+    sn-chunk/dobj/(mother mother NN) [
+      PRP$/ncmod-poss/(my my PRP$)
+    ]
+    sn-co/modnomatch/(and and CC) [
+      n-chunk/modnorule/(health health NN) [
+        NN/ncmod/(father father NN)
+        POS/ncmod-poss/('s 's POS)
+      ]
+    ]
+    vb-chunk/cmod/(deteriorate deteriorate VB)
+  ]
+  sv/conj/(watched watch VBD) [
+    adv/ncmod/(ultimately ultimately RB)
+    sv/cmod/(die die VBP) [
+      sn-chunk/ncsubj/(them them PRP)
+      sf-brk/ta/(, , Fc)
+    ]
+  ]
+  sv/conj/(is be VBZ) [
+    sn-chunk/ncsubj/(it it PRP)
+  ]
+  DT/modnomatch/(a a DT)
+  claus/conj/(defining define VBG) [
+    adv/ncmod/(very very RB)
+    n-chunk/dobj/(time time NN)
+    sp-chunk/ncmod/(in in IN) [
+      sn-chunk/dobj/(lives life NNS) [
+        PRP$/ncmod-poss/(our our PRP$)
+      ]
+    ]
+    st-brk/ta/(. . Fp)
+  ]
+]
+But but CC 
+we we PRP 
+can can MD 
+be be VB 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+very very RB 00031899-r:0/00510749-r:0
+thankful thankful JJ 01146493-a:0
+to to TO 
+have have VB 00056930-v:0/00065370-v:0/00065639-v:0/00120796-v:0/00121046-v:0/00770437-v:0/01156834-v:0/01427127-v:0/01733477-v:0/02108026-v:0/02203362-v:0/02204692-v:0/02205098-v:0/02210119-v:0/02236124-v:0/02355596-v:0/02378453-v:0/02630189-v:0/02740745-v:0
+such such DT 
+great great JJ 00173391-a:0/01123879-a:0/01278818-a:0/01386883-a:0/01467919-a:0/01677433-a:0
+parents parent NNS 00006150-n:0/10399491-n:0
+and and CC 
+to to TO 
+have have VB 00056930-v:0/00065370-v:0/00065639-v:0/00120796-v:0/00121046-v:0/00770437-v:0/01156834-v:0/01427127-v:0/01733477-v:0/02108026-v:0/02203362-v:0/02204692-v:0/02205098-v:0/02210119-v:0/02236124-v:0/02355596-v:0/02378453-v:0/02630189-v:0/02740745-v:0
+been be VBN 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+privilege privilege NN 05158296-n:0/05178715-n:0/05179567-n:0
+to to TO 
+be be VB 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+raised raise VBN 00098517-v:0/00158503-v:0/00229605-v:0/00354195-v:0/00544549-v:0/00549982-v:0/00557537-v:0/00641929-v:0/00744070-v:0/00851625-v:0/00941166-v:0/00950782-v:0/01025246-v:0/01098452-v:0/01156291-v:0/01156406-v:0/01629958-v:0/01661243-v:0/01739814-v:0/01755651-v:0/01759326-v:0/01973759-v:0/01974062-v:0/01975587-v:0/02306281-v:0/02397637-v:0/02539788-v:0
+in in IN 
+such such DT 
+loving love VBG 01426397-v:0/01775164-v:0/01775535-v:0/01828736-v:0/01463965-a:0
+homes home NNS 03259505-n:0/03528100-n:0/03528901-n:0/08078020-n:0/08490199-n:0/08490402-n:0/08559508-n:0/08585158-n:0/14513694-n:0
+. . Fp 
+
++sn-co_[
+  +(But but CC)
+  sn-chunk_[
+    +(we we PRP)
+  ]
+  sv_[
+    mod-chunk_[
+      +(can can MD)
+    ]
+    +vb-chunk_[
+      +(be be VB)
+    ]
+    attrib_[
+      adv_[
+        +(very very RB)
+      ]
+      +attrib_[
+        +(thankful thankful JJ)
+      ]
+    ]
+    inf-mk_[
+      +(to to TO)
+      inf_[
+        +(have have VB)
+        sn-chunk_[
+          (such such DT)
+          +n-chunk_[
+            attrib_[
+              +(great great JJ)
+            ]
+            +n-chunk_[
+              +(parents parent NNS)
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+  nex-coord_[
+    +(and and CC)
+  ]
+  sp-chunk_[
+    +(to to TO)
+    part_[
+      vb-have_[
+        +(have have VB)
+      ]
+      +vb-chunk_[
+        +(been be VBN)
+      ]
+      n-chunk_[
+        +(privilege privilege NN)
+      ]
+    ]
+  ]
+  sp-chunk_[
+    +(to to TO)
+    part_[
+      vb-be_[
+        +(be be VB)
+      ]
+      +vb-chunk_[
+        +(raised raise VBN)
+      ]
+    ]
+  ]
+  sp-chunk_[
+    +(in in IN)
+    sn-chunk_[
+      (such such DT)
+      (loving love VBG)
+      +n-chunk_[
+        +(homes home NNS)
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+sn-co/top/(But but CC) [
+  sn-chunk/modnorule/(we we PRP)
+  sv/modnorule/(be be VB) [
+    mod-chunk/aux/(can can MD)
+    attrib/ncmod/(thankful thankful JJ) [
+      adv/ncmod/(very very RB)
+    ]
+    inf-mk/iobj/(to to TO) [
+      inf/cmod/(have have VB) [
+        sn-chunk/dobj/(parents parent NNS) [
+          DT/det/(such such DT)
+          attrib/ncmod/(great great JJ)
+        ]
+      ]
+    ]
+  ]
+  nex-coord/modnorule/(and and CC)
+  sp-chunk/modnorule/(to to TO) [
+    part/cmod/(been be VBN) [
+      vb-have/aux/(have have VB)
+      n-chunk/dobj/(privilege privilege NN)
+    ]
+  ]
+  sp-chunk/modnorule/(to to TO) [
+    part/cmod/(raised raise VBN) [
+      vb-be/aux/(be be VB)
+    ]
+  ]
+  sp-chunk/modnorule/(in in IN) [
+    sn-chunk/dobj/(homes home NNS) [
+      DT/det/(such such DT)
+      VBG/modnomatch/(loving love VBG)
+    ]
+  ]
+  st-brk/modnorule/(. . Fp)
+]
+Sounds sound NNS 04981139-n:0/05718254-n:0/06278136-n:0/07111047-n:0/07371293-n:0/09440186-n:0/09446115-n:0/11480930-n:0
+as as IN 
+though though IN 
+Eric eric NP 
+has have VBZ 00056930-v:0/00065370-v:0/00065639-v:0/00120796-v:0/00121046-v:0/00770437-v:0/01156834-v:0/01427127-v:0/01733477-v:0/02108026-v:0/02203362-v:0/02204692-v:0/02205098-v:0/02210119-v:0/02236124-v:0/02355596-v:0/02378453-v:0/02630189-v:0/02740745-v:0
+done do VBN 00010435-v:0/00038849-v:0/01619014-v:0/01645601-v:0/01712704-v:0/01841772-v:0/02523221-v:0/02560585-v:0/02561995-v:0/02568672-v:0/02617567-v:0/02669789-v:0/02709107-v:0
+very very RB 00031899-r:0/00510749-r:0
+well well RB 00011093-r:0/00012129-r:0/00012531-r:0/00012779-r:0/00013092-r:0/00013429-r:0/00013626-r:0/00013793-r:0/00014285-r:0/00014616-r:0/00014882-r:0/00015007-r:0/00015135-r:0
+as as IN 
+SMSU smsu NP 
+. . Fp 
+
++claus_[
+  n-chunk_[
+    +(Sounds sound NNS)
+  ]
+  adv_[
+    +(as as IN)
+  ]
+  adv_[
+    +(though though IN)
+  ]
+  n-chunk_[
+    +(Eric eric NP)
+  ]
+  vb-have_[
+    +(has have VBZ)
+  ]
+  +vb-chunk_[
+    +(done do VBN)
+  ]
+  adv_[
+    +(very very RB)
+  ]
+  adv_[
+    +(well well RB)
+  ]
+  sp-chunk_[
+    +(as as IN)
+    n-chunk_[
+      +(SMSU smsu NP)
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(done do VBN) [
+  vb-have/aux/(has have VBZ)
+  n-chunk/ncsubj/(Sounds sound NNS)
+  adv/ncmod/(as as IN)
+  adv/ncmod/(though though IN)
+  n-chunk/ncsubj/(Eric eric NP)
+  adv/ncmod/(very very RB)
+  adv/ncmod/(well well RB)
+  sp-chunk/ncmod/(as as IN) [
+    n-chunk/dobj/(SMSU smsu NP)
+  ]
+  st-brk/ta/(. . Fp)
+]
+He he PRP 
+is be VBZ 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+joining join VBG 01291069-v:0/01295275-v:0/02434976-v:0/02598765-v:0/02622234-v:0
+an a DT 
+excellent excellent JJ 02343110-a:0
+company company NN 08058098-n:0/08077711-n:0/08184861-n:0/08187033-n:0/08214272-n:0/08219059-n:0/08264897-n:0/09887850-n:0/13929588-n:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(He he PRP)
+  ]
+  vb-be_[
+    +(is be VBZ)
+  ]
+  +vb-chunk_[
+    +(joining join VBG)
+  ]
+  sn-chunk_[
+    (an a DT)
+    +n-chunk_[
+      attrib_[
+        +(excellent excellent JJ)
+      ]
+      +n-chunk_[
+        +(company company NN)
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(joining join VBG) [
+  vb-be/aux/(is be VBZ)
+  sn-chunk/ncsubj/(He he PRP)
+  sn-chunk/dobj/(company company NN) [
+    DT/det/(an a DT)
+    attrib/ncmod/(excellent excellent JJ)
+  ]
+  st-brk/ta/(. . Fp)
+]
+I i PRP 
+am be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+also also RB 00047534-r:0
+delighted delight VBN 01190948-v:0/01815628-v:0/01817314-v:0
+to to TO 
+hear hear VB 00598954-v:0/02107442-v:0/02169702-v:0/02171039-v:0/02500902-v:0
+that that IN 
+he he PRP 
+will will MD 
+continue continue VB 00118523-v:0/00781000-v:0/01995549-v:0/02410175-v:0/02679899-v:0/02684924-v:0/02687916-v:0/02727462-v:0/02747709-v:0/02747922-v:0
+his his PRP$ 
+education education NN 00611433-n:0/00883297-n:0/04921900-n:0/05753564-n:0/05984287-n:0/08132637-n:0
+working work VBG 00100551-v:0/00150096-v:0/00458471-v:0/00458754-v:0/00634906-v:0/01162754-v:0/01235355-v:0/01525666-v:0/01541231-v:0/01629589-v:0/01659248-v:0/01668603-v:0/01741446-v:0/01817574-v:0/01852468-v:0/02051031-v:0/02116980-v:0/02373015-v:0/02407987-v:0/02410855-v:0/02413480-v:0/02436963-v:0/02444159-v:0/02525447-v:0/02536557-v:0/02594979-v:0/02751271-v:0/00833334-a:0/00864461-a:0/01091728-a:0/01758194-a:0/01836117-a:0
+toward toward IN 
+an a DT 
+MBA mba NP 06701359-n:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(I i PRP)
+  ]
+  +(am be VBP)
+  sv_[
+    adv_[
+      +(also also RB)
+    ]
+    +(delighted delight VBN)
+    inf-mk_[
+      +(to to TO)
+      inf_[
+        +(hear hear VB)
+        sub-cl_[
+          +(that that IN)
+          sv_[
+            sn-chunk_[
+              +(he he PRP)
+            ]
+            mod-chunk_[
+              +(will will MD)
+            ]
+            +vb-chunk_[
+              +(continue continue VB)
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+  part_[
+    sn-chunk_[
+      (his his PRP$)
+      +n-chunk_[
+        +(education education NN)
+      ]
+    ]
+    +(working work VBG)
+    sp-chunk_[
+      +(toward toward IN)
+      sn-chunk_[
+        (an a DT)
+        +n-chunk_[
+          +(MBA mba NP)
+        ]
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(am be VBP) [
+  sn-chunk/ncsubj/(I i PRP)
+  sv/cmod/(delighted delight VBN) [
+    adv/ncmod/(also also RB)
+    inf-mk/iobj/(to to TO) [
+      inf/cmod/(hear hear VB) [
+        sub-cl/ccomp/(that that IN) [
+          sv/cmod/(continue continue VB) [
+            mod-chunk/aux/(will will MD)
+            sn-chunk/ncsubj/(he he PRP)
+          ]
+        ]
+      ]
+    ]
+  ]
+  part/ccomp/(working work VBG) [
+    sn-chunk/dobj/(education education NN) [
+      PRP$/ncmod-poss/(his his PRP$)
+    ]
+    sp-chunk/ncmod/(toward toward IN) [
+      sn-chunk/dobj/(MBA mba NP) [
+        DT/det/(an a DT)
+      ]
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]
+As as IN 
+we we PRP 
+are be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+living live VBG 00596644-v:0/02614181-v:0/02614387-v:0/02614970-v:0/02616713-v:0/02618149-v:0/02649830-v:0/00005839-a:0/00099704-a:0/00928781-a:0/00928874-a:0/01941274-a:0/02756129-a:0
+in in IN 
+an a DT 
+age age NN 04924103-n:0/15145171-n:0/15153787-n:0/15242955-n:0/15254028-n:0
+were be VBD 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+intellectual intellectual JJ 01332386-a:0/01780343-a:0/01927455-a:0
+capital capital NN 02956247-n:0/06824227-n:0/07282929-n:0/08357129-n:0/08518505-n:0/08518747-n:0/13353607-n:0/13354420-n:0
+is be VBZ 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+so so RB 00037641-r:0/00043003-r:0/00117620-r:0/00118363-r:0/00121135-r:0/00146594-r:0/00146763-r:0/00146926-r:0/00147126-r:0/00147272-r:0
+valuable valuable JJ 02500884-a:0/02587738-a:0
+, , Fc 
+it it PRP 
+is be VBZ 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+important important JJ 00655779-a:0/01275562-a:0/01539887-a:0/01830403-a:0/02161432-a:0
+for for IN 
+every every DT 
+young young JJ 00818008-a:0/00937732-a:0/01643480-a:0/01646941-a:0/01649720-a:0
+person person NN 00007846-n:0/05217688-n:0/06326797-n:0/80000973-n:0
+to to TO 
+obtain obtain VB 00522751-v:0/02238085-v:0/02648502-v:0
+the the DT 
+very very RB 00031899-r:0/00510749-r:0
+best well RBS 00011093-r:0/00012129-r:0/00012531-r:0/00012779-r:0/00013092-r:0/00013429-r:0/00013626-r:0/00013793-r:0/00014285-r:0/00014616-r:0/00014882-r:0/00015007-r:0/00015135-r:0
+possible possible JJ 00044353-a:0/01821266-a:0
+education education NN 00611433-n:0/00883297-n:0/04921900-n:0/05753564-n:0/05984287-n:0/08132637-n:0
+they they PRP 
+can can MD 
+. . Fp 
+
++claus_[
+  claus_[
+    part_[
+      adv_[
+        +(As as IN)
+      ]
+      sn-chunk_[
+        +(we we PRP)
+      ]
+      vb-be_[
+        +(are be VBP)
+      ]
+      +vb-chunk_[
+        +(living live VBG)
+      ]
+      sp-chunk_[
+        +(in in IN)
+        sv_[
+          sn-chunk_[
+            (an a DT)
+            +n-chunk_[
+              +(age age NN)
+            ]
+          ]
+          +(were be VBD)
+          n-chunk_[
+            attrib_[
+              +(intellectual intellectual JJ)
+            ]
+            +n-chunk_[
+              +(capital capital NN)
+            ]
+          ]
+        ]
+      ]
+    ]
+    +(is be VBZ)
+    attrib_[
+      adv_[
+        +(so so RB)
+      ]
+      +attrib_[
+        +(valuable valuable JJ)
+      ]
+    ]
+    sf-brk_[
+      +(, , Fc)
+    ]
+  ]
+  sn-chunk_[
+    +(it it PRP)
+  ]
+  +(is be VBZ)
+  attrib_[
+    +(important important JJ)
+  ]
+  sp-chunk_[
+    +(for for IN)
+    sn-chunk_[
+      (every every DT)
+      +n-chunk_[
+        attrib_[
+          +(young young JJ)
+        ]
+        +n-chunk_[
+          +(person person NN)
+        ]
+      ]
+    ]
+  ]
+  inf-mk_[
+    +(to to TO)
+    inf_[
+      +(obtain obtain VB)
+      sn-chunk_[
+        (the the DT)
+        +n-chunk_[
+          attrib_[
+            adv_[
+              +(very very RB)
+            ]
+            +attrib_[
+              adv_[
+                +(best well RBS)
+              ]
+              +attrib_[
+                +(possible possible JJ)
+              ]
+            ]
+          ]
+          +n-chunk_[
+            +(education education NN)
+          ]
+        ]
+      ]
+    ]
+  ]
+  sn-chunk_[
+    +(they they PRP)
+  ]
+  mod-chunk_[
+    +(can can MD)
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(is be VBZ) [
+  claus/modnomatch/(is be VBZ) [
+    part/modnomatch/(living live VBG) [
+      vb-be/aux/(are be VBP)
+      adv/ncmod/(As as IN)
+      sn-chunk/dobj/(we we PRP)
+      sp-chunk/ncmod/(in in IN) [
+        sv/cmod/(were be VBD) [
+          sn-chunk/ncsubj/(age age NN) [
+            DT/det/(an a DT)
+          ]
+          n-chunk/dobj/(capital capital NN) [
+            attrib/ncmod/(intellectual intellectual JJ)
+          ]
+        ]
+      ]
+    ]
+    attrib/ncmod/(valuable valuable JJ) [
+      adv/ncmod/(so so RB)
+    ]
+    sf-brk/ta/(, , Fc)
+  ]
+  sn-chunk/ncsubj/(it it PRP)
+  attrib/ncmod/(important important JJ)
+  sp-chunk/ncmod/(for for IN) [
+    sn-chunk/dobj/(person person NN) [
+      DT/det/(every every DT)
+      attrib/ncmod/(young young JJ)
+    ]
+  ]
+  inf-mk/iobj/(to to TO) [
+    inf/cmod/(obtain obtain VB) [
+      sn-chunk/dobj/(education education NN) [
+        DT/det/(the the DT)
+        attrib/ncmod/(possible possible JJ) [
+          adv/ncmod/(very very RB)
+          adv/ncmod/(best well RBS)
+        ]
+      ]
+    ]
+  ]
+  sn-chunk/dobj/(they they PRP)
+  mod-chunk/aux/(can can MD)
+  st-brk/ta/(. . Fp)
+]
+As as IN 
+to to TO 
+our our PRP$ 
+family family NN 07970406-n:0/07970721-n:0/07997703-n:0/08078020-n:0/08107499-n:0/08227916-n:0/08246302-n:0/10236304-n:0
+, , Fc 
+within within IN 
+the the DT 
+last last JJ 00004296-a:0/00230076-a:0/00349894-a:0/01010271-a:0/01013279-a:0/01212095-a:0/01412912-a:0/01579128-a:0/01730329-a:0
+ten 10 Z 
+days day NNS 10925772-n:0/14484516-n:0/15123115-n:0/15136453-n:0/15155220-n:0/15157225-n:0/15164957-n:0/15208333-n:0/15208540-n:0/15249236-n:0
+our our PRP$ 
+youngest young JJS 00818008-a:0/00937732-a:0/01643480-a:0/01646941-a:0/01649720-a:0
+daughter daughter NN 09992837-n:0
+Elizabeth elizabeth NP 10957330-n:0/10957748-n:0
+was be VBD 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+married marry VBN 02488834-v:0/02489456-v:0
+to to TO 
+a a DT 
+young young JJ 00818008-a:0/00937732-a:0/01643480-a:0/01646941-a:0/01649720-a:0
+man man NN 02472293-n:0/02472987-n:0/03716327-n:0/08887716-n:0/10287213-n:0/10288516-n:0/10288763-n:0/10289039-n:0/10289176-n:0/10582746-n:0/10745332-n:0
+from from IN 
+Buenos_Aires buenos_aires NP 08712876-n:0
+, , Fc 
+Argentina argentina NP 02542804-n:0/08711974-n:0
+. . Fp 
+
++adv_[
+  +(As as IN)
+  sp-chunk_[
+    +(to to TO)
+    sn-chunk_[
+      (our our PRP$)
+      +n-chunk_[
+        +(family family NN)
+      ]
+    ]
+  ]
+  sf-brk_[
+    +(, , Fc)
+  ]
+  prt-sp_[
+    +(within within IN)
+  ]
+  DT_[
+    +(the the DT)
+  ]
+  part_[
+    sn-chunk_[
+      attrib_[
+        +(last last JJ)
+      ]
+      (ten 10 Z)
+      +n-chunk_[
+        +(days day NNS)
+      ]
+    ]
+    sn-chunk_[
+      (our our PRP$)
+      +n-chunk_[
+        attrib_[
+          +(youngest young JJS)
+        ]
+        +n-chunk_[
+          (daughter daughter NN)
+          +n-chunk_[
+            +(Elizabeth elizabeth NP)
+          ]
+        ]
+      ]
+    ]
+    vb-be_[
+      +(was be VBD)
+    ]
+    +vb-chunk_[
+      +(married marry VBN)
+    ]
+    sp-chunk_[
+      +(to to TO)
+      sn-chunk_[
+        (a a DT)
+        +n-chunk_[
+          attrib_[
+            +(young young JJ)
+          ]
+          +n-chunk_[
+            +(man man NN)
+          ]
+        ]
+      ]
+    ]
+    sp-chunk_[
+      +(from from IN)
+      n-chunk_[
+        +(Buenos_Aires buenos_aires NP)
+      ]
+    ]
+  ]
+  sf-brk_[
+    +(, , Fc)
+  ]
+  n-chunk_[
+    +(Argentina argentina NP)
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+adv/top/(As as IN) [
+  sp-chunk/iobj/(to to TO) [
+    sn-chunk/dobj/(family family NN) [
+      PRP$/ncmod-poss/(our our PRP$)
+    ]
+  ]
+  sf-brk/ta/(, , Fc)
+  prt-sp/modnomatch/(within within IN)
+  DT/modnomatch/(the the DT)
+  part/cmod/(married marry VBN) [
+    vb-be/aux/(was be VBD)
+    sn-chunk/dobj/(days day NNS) [
+      Z/ncmod-num/(ten 10 Z)
+      attrib/ncmod/(last last JJ)
+    ]
+    sn-chunk/dobj/(Elizabeth elizabeth NP) [
+      PRP$/ncmod-poss/(our our PRP$)
+      attrib/ncmod/(youngest young JJS)
+      NN/ncmod/(daughter daughter NN)
+    ]
+    sp-chunk/ncmod/(to to TO) [
+      sn-chunk/dobj/(man man NN) [
+        DT/det/(a a DT)
+        attrib/ncmod/(young young JJ)
+      ]
+    ]
+    sp-chunk/ncmod/(from from IN) [
+      n-chunk/dobj/(Buenos_Aires buenos_aires NP)
+    ]
+  ]
+  sf-brk/ta/(, , Fc)
+  n-chunk/dobj/(Argentina argentina NP)
+  st-brk/ta/(. . Fp)
+]
+They they PRP 
+met meet VBD 01079480-v:0/01183573-v:0/01205696-v:0/02022804-v:0/02023107-v:0/02110082-v:0/02428924-v:0/02486932-v:0/02594674-v:0/02596113-v:0/02667900-v:0/02710402-v:0/02739480-v:0
+while while IN 
+they they PRP 
+were be VBD 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+both both DT 
+working work VBG 00100551-v:0/00150096-v:0/00458471-v:0/00458754-v:0/00634906-v:0/01162754-v:0/01235355-v:0/01525666-v:0/01541231-v:0/01629589-v:0/01659248-v:0/01668603-v:0/01741446-v:0/01817574-v:0/01852468-v:0/02051031-v:0/02116980-v:0/02373015-v:0/02407987-v:0/02410855-v:0/02413480-v:0/02436963-v:0/02444159-v:0/02525447-v:0/02536557-v:0/02594979-v:0/02751271-v:0/00833334-a:0/00864461-a:0/01091728-a:0/01758194-a:0/01836117-a:0
+on on IN 
+a a DT 
+project project NN 00795720-n:0/05910453-n:0
+as as IN 
+lawyers lawyer NNS 10249950-n:0
+in in IN 
+Buenos_Aires buenos_aires NP 08712876-n:0
+. . Fp 
+
++sv_[
+  sn-chunk_[
+    +(They they PRP)
+  ]
+  +(met meet VBD)
+  sp-chunk_[
+    +(while while IN)
+    sv_[
+      sn-chunk_[
+        +(they they PRP)
+      ]
+      +(were be VBD)
+    ]
+  ]
+  DT_[
+    +(both both DT)
+  ]
+  claus_[
+    +(working work VBG)
+    (on on IN)
+    sn-chunk_[
+      (a a DT)
+      +n-chunk_[
+        +(project project NN)
+      ]
+    ]
+    sp-chunk_[
+      +(as as IN)
+      n-chunk_[
+        +(lawyers lawyer NNS)
+      ]
+    ]
+    sp-chunk_[
+      +(in in IN)
+      n-chunk_[
+        +(Buenos_Aires buenos_aires NP)
+      ]
+    ]
+    st-brk_[
+      +(. . Fp)
+    ]
+  ]
+]
+sv/top/(met meet VBD) [
+  sn-chunk/ncsubj/(They they PRP)
+  sp-chunk/ncmod/(while while IN) [
+    sv/cmod/(were be VBD) [
+      sn-chunk/ncsubj/(they they PRP)
+    ]
+  ]
+  DT/modnomatch/(both both DT)
+  claus/ccomp/(working work VBG) [
+    IN/ncmod-prt/(on on IN)
+    sn-chunk/dobj/(project project NN) [
+      DT/det/(a a DT)
+    ]
+    sp-chunk/ncmod/(as as IN) [
+      n-chunk/dobj/(lawyers lawyer NNS)
+    ]
+    sp-chunk/ncmod/(in in IN) [
+      n-chunk/dobj/(Buenos_Aires buenos_aires NP)
+    ]
+    st-brk/ta/(. . Fp)
+  ]
+]
+They they PRP 
+are be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+currently currently RB 00048268-r:0
+on on IN 
+their their PRP$ 
+honeymoon honeymoon NN 15138903-n:0/15293788-n:0
+but but CC 
+shortly shortly RB 00033922-r:0/00034189-r:0/00034308-r:0/00289860-r:0/00297319-r:0
+after after IN 
+returning return VBG 00387310-v:0/00548153-v:0/00816353-v:0/00879028-v:0/00959524-v:0/01062253-v:0/01433159-v:0/01629000-v:0/02004874-v:0/02005617-v:0/02078294-v:0/02229550-v:0/02284951-v:0/02310007-v:0/02357072-v:0/02401296-v:0/00203123-a:0/01877416-a:0
+will will MD 
+be be VB 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+moving move VBG 00014549-v:0/00124442-v:0/00539110-v:0/00879356-v:0/01076615-v:0/01649999-v:0/01767949-v:0/01771390-v:0/01831531-v:0/01835496-v:0/01850315-v:0/01855606-v:0/02355959-v:0/02367363-v:0/02372605-v:0/02598863-v:0/01560513-a:0/01561771-a:0/01565396-a:0
+from from IN 
+Buenos_Aires buenos_aires NP 08712876-n:0
+to to TO 
+Miami miami NP 09073697-n:0/09661107-n:0
+, , Fc 
+Florida florida NP 09071690-n:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(They they PRP)
+  ]
+  +(are be VBP)
+  adv_[
+    +(currently currently RB)
+  ]
+  sp-chunk_[
+    +(on on IN)
+    sn-chunk_[
+      (their their PRP$)
+      +n-chunk_[
+        +(honeymoon honeymoon NN)
+      ]
+    ]
+  ]
+  adv-co_[
+    +(but but CC)
+    adv_[
+      +(shortly shortly RB)
+    ]
+  ]
+  adv_[
+    +(after after IN)
+  ]
+  part_[
+    +(returning return VBG)
+    claus_[
+      mod-chunk_[
+        +(will will MD)
+      ]
+      +vb-chunk_[
+        vb-be_[
+          +(be be VB)
+        ]
+        +vb-chunk_[
+          +(moving move VBG)
+        ]
+      ]
+    ]
+  ]
+  sp-chunk_[
+    +(from from IN)
+    n-chunk_[
+      +(Buenos_Aires buenos_aires NP)
+    ]
+  ]
+  sp-chunk_[
+    +(to to TO)
+    n-chunk_[
+      +(Miami miami NP)
+    ]
+  ]
+  sf-brk_[
+    +(, , Fc)
+  ]
+  n-chunk_[
+    +(Florida florida NP)
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(are be VBP) [
+  sn-chunk/ncsubj/(They they PRP)
+  adv/ncmod/(currently currently RB)
+  sp-chunk/ncmod/(on on IN) [
+    sn-chunk/dobj/(honeymoon honeymoon NN) [
+      PRP$/ncmod-poss/(their their PRP$)
+    ]
+  ]
+  adv-co/modnomatch/(but but CC) [
+    adv/modnorule/(shortly shortly RB)
+  ]
+  adv/ncmod/(after after IN)
+  part/ccomp/(returning return VBG) [
+    claus/ccomp/(moving move VBG) [
+      mod-chunk/aux/(will will MD)
+      vb-be/aux/(be be VB)
+    ]
+  ]
+  sp-chunk/ncmod/(from from IN) [
+    n-chunk/dobj/(Buenos_Aires buenos_aires NP)
+  ]
+  sp-chunk/iobj/(to to TO) [
+    n-chunk/dobj/(Miami miami NP)
+  ]
+  sf-brk/ta/(, , Fc)
+  n-chunk/dobj/(Florida florida NP)
+  st-brk/ta/(. . Fp)
+]
+This this DT 
+past_Thursday_night [J:??/??/??:??.??:pm] W 
+our our PRP$ 
+sixth 6 JJ 02186833-a:0
+grandchild grandchild NN 10141590-n:0
+was be VBD 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+born bear VBN 00047745-v:0/00056930-v:0/00059019-v:0/00668099-v:0/01432601-v:0/01601234-v:0/01652139-v:0/02291708-v:0/02301825-v:0/02302220-v:0/02518161-v:0/02630871-v:0/02700867-v:0
+. . Fp 
+
++DT_[
+  +(This this DT)
+  claus_[
+    adv_[
+      +(past_Thursday_night [J:??/??/??:??.??:pm] W)
+    ]
+    sn-chunk_[
+      (our our PRP$)
+      +n-chunk_[
+        attrib_[
+          +(sixth 6 JJ)
+        ]
+        +n-chunk_[
+          +(grandchild grandchild NN)
+        ]
+      ]
+    ]
+    vb-be_[
+      +(was be VBD)
+    ]
+    +vb-chunk_[
+      +(born bear VBN)
+    ]
+    st-brk_[
+      +(. . Fp)
+    ]
+  ]
+]
+DT/top/(This this DT) [
+  claus/modnorule/(born bear VBN) [
+    vb-be/aux/(was be VBD)
+    adv/ncmod/(past_Thursday_night [J:??/??/??:??.??:pm] W)
+    sn-chunk/ncsubj/(grandchild grandchild NN) [
+      PRP$/ncmod-poss/(our our PRP$)
+      attrib/ncmod/(sixth 6 JJ)
+    ]
+    st-brk/ta/(. . Fp)
+  ]
+]
+It it PRP 
+was be VBD 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+born bear VBN 00047745-v:0/00056930-v:0/00059019-v:0/00668099-v:0/01432601-v:0/01601234-v:0/01652139-v:0/02291708-v:0/02301825-v:0/02302220-v:0/02518161-v:0/02630871-v:0/02700867-v:0
+to to TO 
+our our PRP$ 
+son son NN 09537144-n:0/10624074-n:0
+David david NP 10923700-n:0/10924072-n:0/10924231-n:0
+and and CC 
+his his PRP$ 
+wife wife NN 10780632-n:0
+Courtney courtney NP 
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(It it PRP)
+  ]
+  vb-be_[
+    +(was be VBD)
+  ]
+  +vb-chunk_[
+    +(born bear VBN)
+  ]
+  sp-chunk_[
+    +(to to TO)
+    sn-chunk_[
+      (our our PRP$)
+      +n-chunk_[
+        (son son NN)
+        +n-chunk_[
+          +(David david NP)
+        ]
+      ]
+    ]
+  ]
+  sn-co_[
+    +(and and CC)
+    sn-chunk_[
+      (his his PRP$)
+      +n-chunk_[
+        (wife wife NN)
+        +n-chunk_[
+          +(Courtney courtney NP)
+        ]
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(born bear VBN) [
+  vb-be/aux/(was be VBD)
+  sn-chunk/ncsubj/(It it PRP)
+  sp-chunk/iobj/(to to TO) [
+    sn-chunk/dobj/(David david NP) [
+      PRP$/ncmod-poss/(our our PRP$)
+      NN/ncmod/(son son NN)
+    ]
+  ]
+  sn-co/modnomatch/(and and CC) [
+    sn-chunk/modnorule/(Courtney courtney NP) [
+      PRP$/ncmod-poss/(his his PRP$)
+      NN/ncmod/(wife wife NN)
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]
+It it PRP 
+was be VBD 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+a a DT 
+7 7 Z 
+lb. lb. NN 
+, , Fc 
+10 10 Z 
+oz. oz. NN 13719922-n:0
+, , Fc 
+20_inch LN_in:20 Zu 
+little little JJ 00855670-a:0/01280908-a:0/01391351-a:0/01455732-a:0/01467534-a:0/01554510-a:0/01649031-a:0/02386612-a:0
+boy boy NN 09637837-n:0/09870926-n:0/10285313-n:0/10624074-n:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(It it PRP)
+  ]
+  +(was be VBD)
+  sn-chunk_[
+    (a a DT)
+    +sn-chunk_[
+      (7 7 Z)
+      +n-chunk_[
+        +(lb. lb. NN)
+      ]
+    ]
+  ]
+  sn-parenth_[
+    sf-brk_[
+      +(, , Fc)
+    ]
+    (10 10 Z)
+    +n-chunk_[
+      +(oz. oz. NN)
+    ]
+    sf-brk_[
+      +(, , Fc)
+    ]
+  ]
+  Zu_[
+    +(20_inch LN_in:20 Zu)
+  ]
+  n-chunk_[
+    attrib_[
+      +(little little JJ)
+    ]
+    +n-chunk_[
+      +(boy boy NN)
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(was be VBD) [
+  sn-chunk/ncsubj/(It it PRP)
+  sn-chunk/dobj/(lb. lb. NN) [
+    DT/det/(a a DT)
+    Z/ncmod-num/(7 7 Z)
+  ]
+  sn-parenth/modnomatch/(oz. oz. NN) [
+    Z/ncmod-num/(10 10 Z)
+    sf-brk/ta/(, , Fc)
+    sf-brk/ta/(, , Fc)
+  ]
+  Zu/modnomatch/(20_inch LN_in:20 Zu)
+  n-chunk/dobj/(boy boy NN) [
+    attrib/ncmod/(little little JJ)
+  ]
+  st-brk/ta/(. . Fp)
+]
+So so RB 00037641-r:0/00043003-r:0/00117620-r:0/00118363-r:0/00121135-r:0/00146594-r:0/00146763-r:0/00146926-r:0/00147126-r:0/00147272-r:0
+we we PRP 
+now now RB 00048475-r:0/00048739-r:0/00049102-r:0/00049220-r:0/00049433-r:0/00049685-r:0/00049758-r:0
+have have VBP 00056930-v:0/00065370-v:0/00065639-v:0/00120796-v:0/00121046-v:0/00770437-v:0/01156834-v:0/01427127-v:0/01733477-v:0/02108026-v:0/02203362-v:0/02204692-v:0/02205098-v:0/02210119-v:0/02236124-v:0/02355596-v:0/02378453-v:0/02630189-v:0/02740745-v:0
+three 3 Z 
+grandsons grandson NNS 10143299-n:0
+and and CC 
+three 3 Z 
+granddaughters granddaughter NNS 10141732-n:0
+ranging range VBG 00658052-v:0/01204439-v:0/01474209-v:0/01576165-v:0/01881180-v:0/02690384-v:0/02727039-v:0/02741149-v:0/03153018-a:0
+from from IN 
+about about RB 00007015-r:0/00071165-r:0/00071840-r:0/00072201-r:0/00072329-r:0/00073033-r:0/00358114-r:0
+2 2 Z 
+years year NNS 08238660-n:0/15201505-n:0/15203791-n:0/15204297-n:0
+- - Fg 
+4 4 Z 
+months month NNS 15206296-n:0/15209413-n:0
+down down RB 00095320-r:0/00095612-r:0/00095841-r:0/00095946-r:0/00096089-r:0/00096232-r:0
+to to TO 
+a a DT 
+few few DT 
+days day NNS 10925772-n:0/14484516-n:0/15123115-n:0/15136453-n:0/15155220-n:0/15157225-n:0/15164957-n:0/15208333-n:0/15208540-n:0/15249236-n:0
+. . Fp 
+
++claus_[
+  adv_[
+    +(So so RB)
+  ]
+  sn-chunk_[
+    +(we we PRP)
+  ]
+  adv_[
+    +(now now RB)
+  ]
+  +(have have VBP)
+  part_[
+    sn-coor_[
+      sn-chunk_[
+        (three 3 Z)
+        +n-chunk_[
+          +(grandsons grandson NNS)
+        ]
+      ]
+      +(and and CC)
+      sn-chunk_[
+        (three 3 Z)
+        +n-chunk_[
+          +(granddaughters granddaughter NNS)
+        ]
+      ]
+    ]
+    +(ranging range VBG)
+    sp-chunk_[
+      +prt-sp_[
+        +(from from IN)
+      ]
+      adv_[
+        +(about about RB)
+      ]
+    ]
+    sn-chunk_[
+      (2 2 Z)
+      +n-chunk_[
+        +(years year NNS)
+      ]
+    ]
+  ]
+  inc-mk_[
+    +(- - Fg)
+  ]
+  sn-chunk_[
+    (4 4 Z)
+    +n-chunk_[
+      +(months month NNS)
+    ]
+  ]
+  adv_[
+    +(down down RB)
+  ]
+  sp-chunk_[
+    +(to to TO)
+    sn-chunk_[
+      (a a DT)
+      +sn-chunk_[
+        (few few DT)
+        +n-chunk_[
+          +(days day NNS)
+        ]
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(have have VBP) [
+  adv/ncmod/(So so RB)
+  sn-chunk/ncsubj/(we we PRP)
+  adv/ncmod/(now now RB)
+  part/ccomp/(ranging range VBG) [
+    sn-coor/dobj/(and and CC) [
+      sn-chunk/conj/(grandsons grandson NNS) [
+        Z/ncmod-num/(three 3 Z)
+      ]
+      sn-chunk/conj/(granddaughters granddaughter NNS) [
+        Z/ncmod-num/(three 3 Z)
+      ]
+    ]
+    sp-chunk/ncmod/(from from IN) [
+      adv/dobj/(about about RB)
+    ]
+    sn-chunk/dobj/(years year NNS) [
+      Z/ncmod-num/(2 2 Z)
+    ]
+  ]
+  inc-mk/ta/(- - Fg)
+  sn-chunk/dobj/(months month NNS) [
+    Z/ncmod-num/(4 4 Z)
+  ]
+  adv/ncmod/(down down RB)
+  sp-chunk/ncmod/(to to TO) [
+    sn-chunk/dobj/(days day NNS) [
+      DT/det/(a a DT)
+      DT/det/(few few DT)
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]
+They they PRP 
+are be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+a a DT 
+great great JJ 00173391-a:0/01123879-a:0/01278818-a:0/01386883-a:0/01467919-a:0/01677433-a:0
+deal deal NN 01084637-n:0/01085337-n:0/01110274-n:0/06771159-n:0/07293180-n:0/07956887-n:0/13774404-n:0/15100257-n:0/15102622-n:0
+of of IN 
+fun fun NN 00429949-n:0/01260556-n:0/04649261-n:0/06780882-n:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(They they PRP)
+  ]
+  +(are be VBP)
+  sn-chunk_[
+    (a a DT)
+    +n-chunk_[
+      attrib_[
+        +(great great JJ)
+      ]
+      +n-chunk_[
+        +(deal deal NN)
+      ]
+    ]
+    sp-chunk_[
+      +(of of IN)
+      n-chunk_[
+        +(fun fun NN)
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(are be VBP) [
+  sn-chunk/ncsubj/(They they PRP)
+  sn-chunk/dobj/(deal deal NN) [
+    DT/det/(a a DT)
+    attrib/ncmod/(great great JJ)
+    sp-chunk/ncmod/(of of IN) [
+      n-chunk/dobj/(fun fun NN)
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]
+We we PRP 
+are be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+doing do VBG 00010435-v:0/00038849-v:0/01619014-v:0/01645601-v:0/01712704-v:0/01841772-v:0/02523221-v:0/02560585-v:0/02561995-v:0/02568672-v:0/02617567-v:0/02669789-v:0/02709107-v:0
+quite quite RB 00018577-r:0/00018781-r:0/00018918-r:0/00019181-r:0
+well well RB 00011093-r:0/00012129-r:0/00012531-r:0/00012779-r:0/00013092-r:0/00013429-r:0/00013626-r:0/00013793-r:0/00014285-r:0/00014616-r:0/00014882-r:0/00015007-r:0/00015135-r:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(We we PRP)
+  ]
+  vb-be_[
+    +(are be VBP)
+  ]
+  +vb-chunk_[
+    +(doing do VBG)
+  ]
+  adv_[
+    +(quite quite RB)
+  ]
+  adv_[
+    +(well well RB)
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(doing do VBG) [
+  vb-be/aux/(are be VBP)
+  sn-chunk/ncsubj/(We we PRP)
+  adv/ncmod/(quite quite RB)
+  adv/ncmod/(well well RB)
+  st-brk/ta/(. . Fp)
+]
+I i PRP 
+am be VBP 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+looking look VBG 00033599-v:0/00712708-v:0/00720063-v:0/00929362-v:0/02130524-v:0/02133435-v:0/02153709-v:0/02549581-v:0/02658447-v:0/02693319-v:0/01874886-a:0
+forward forward RB 00067265-r:0/00074641-r:0/00075442-r:0/00103859-r:0/00275694-r:0
+to to TO 
+seeing see VBG 00591115-v:0/00598954-v:0/00623151-v:0/00662589-v:0/00690614-v:0/00703708-v:0/00920336-v:0/01156568-v:0/01470670-v:0/01635432-v:0/02023107-v:0/02026086-v:0/02110220-v:0/02128873-v:0/02129289-v:0/02129709-v:0/02131279-v:0/02150948-v:0/02156225-v:0/02486232-v:0/02488304-v:0/02488488-v:0/02493030-v:0/02549581-v:0/02158731-a:0
+Ginger ginger NP 04634833-n:0/07814925-n:0/07815163-n:0/12355760-n:0
+" " Fe 
+Rees rees NP 
+" " Fe 
+Copeland copeland NP 
+when when WRB 
+she she PRP 
+comes come VBZ 00341917-v:0/00342812-v:0/00344886-v:0/00542120-v:0/00659984-v:0/00723349-v:0/01839690-v:0/01849221-v:0/02005948-v:0/02006709-v:0/02197360-v:0/02617567-v:0/02625339-v:0/02627363-v:0/02645007-v:0/02686805-v:0/02729963-v:0/02737187-v:0/02743214-v:0/02743565-v:0/02743921-v:0
+to to TO 
+Houston houston NP 09144851-n:0/11061853-n:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(I i PRP)
+  ]
+  vb-be_[
+    +(am be VBP)
+  ]
+  +vb-chunk_[
+    +(looking look VBG)
+    (forward forward RB)
+  ]
+  sp-chunk_[
+    +(to to TO)
+    part_[
+      +(seeing see VBG)
+      n-chunk_[
+        +(Ginger ginger NP)
+      ]
+    ]
+  ]
+  sn-chunk_[
+    quot-mk_[
+      +(" " Fe)
+    ]
+    +(Rees rees NP)
+    quot-mk_[
+      +(" " Fe)
+    ]
+  ]
+  n-chunk_[
+    +(Copeland copeland NP)
+  ]
+  quest_[
+    +(when when WRB)
+    vb-chunk_[
+      sn-chunk_[
+        +(she she PRP)
+      ]
+      +(comes come VBZ)
+    ]
+  ]
+  sp-chunk_[
+    +(to to TO)
+    n-chunk_[
+      +(Houston houston NP)
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(looking look VBG) [
+  vb-be/aux/(am be VBP)
+  RB/ncmod-prt/(forward forward RB)
+  sn-chunk/ncsubj/(I i PRP)
+  sp-chunk/ncmod/(to to TO) [
+    part/cmod/(seeing see VBG) [
+      n-chunk/dobj/(Ginger ginger NP)
+    ]
+  ]
+  sn-chunk/dobj/(Rees rees NP) [
+    quot-mk/ta/(" " Fe)
+    quot-mk/ta/(" " Fe)
+  ]
+  n-chunk/dobj/(Copeland copeland NP)
+  quest/cmod/(when when WRB) [
+    vb-chunk/modnorule/(comes come VBZ) [
+      sn-chunk/ncsubj/(she she PRP)
+    ]
+  ]
+  sp-chunk/iobj/(to to TO) [
+    n-chunk/dobj/(Houston houston NP)
+  ]
+  st-brk/ta/(. . Fp)
+]
+I i PRP 
+would would MD 
+be be VB 02268246-v:0/02445925-v:0/02603699-v:0/02604760-v:0/02614181-v:0/02616386-v:0/02620587-v:0/02655135-v:0/02664769-v:0/02697725-v:0/02702508-v:0/02744820-v:0/02749904-v:0
+delighted delight VBN 01190948-v:0/01815628-v:0/01817314-v:0
+to to TO 
+arrange arrange VB 00038849-v:0/00735571-v:0/01021629-v:0/01463963-v:0/01648126-v:0/01706129-v:0/01745141-v:0
+tickets ticket NNS 04716703-n:0/06495948-n:0/06518719-n:0/06558678-n:0/07273136-n:0
+for for IN 
+you you PRP 
+and and CC 
+your your PRP$ 
+family family NN 07970406-n:0/07970721-n:0/07997703-n:0/08078020-n:0/08107499-n:0/08227916-n:0/08246302-n:0/10236304-n:0
+should should MD 
+you you PRP 
+ever ever RB 00019339-r:0/00146387-r:0/00212604-r:0
+have have VBP 00056930-v:0/00065370-v:0/00065639-v:0/00120796-v:0/00121046-v:0/00770437-v:0/01156834-v:0/01427127-v:0/01733477-v:0/02108026-v:0/02203362-v:0/02204692-v:0/02205098-v:0/02210119-v:0/02236124-v:0/02355596-v:0/02378453-v:0/02630189-v:0/02740745-v:0
+occasion occasion NN 07416714-n:0/07447261-n:0/09179264-n:0/14485064-n:0/15245829-n:0
+to to TO 
+visit visit VB 00260142-v:0/00748282-v:0/01038666-v:0/01843689-v:0/01844048-v:0/02487573-v:0/02493030-v:0/02619424-v:0
+Houston houston NP 09144851-n:0/11061853-n:0
+. . Fp 
+
++sv_[
+  sn-chunk_[
+    +(I i PRP)
+  ]
+  mod-chunk_[
+    +(would would MD)
+  ]
+  +vb-chunk_[
+    vb-be_[
+      +(be be VB)
+    ]
+    +vb-chunk_[
+      +(delighted delight VBN)
+    ]
+  ]
+  inf-mk_[
+    +(to to TO)
+    inf_[
+      +(arrange arrange VB)
+      n-chunk_[
+        +(tickets ticket NNS)
+      ]
+      sp-chunk_[
+        +(for for IN)
+        sn-chunk_[
+          +(you you PRP)
+        ]
+      ]
+    ]
+  ]
+  sn-co_[
+    +(and and CC)
+    sn-chunk_[
+      (your your PRP$)
+      +n-chunk_[
+        +(family family NN)
+      ]
+    ]
+  ]
+  mod-chunk_[
+    +(should should MD)
+  ]
+  claus_[
+    sn-chunk_[
+      +(you you PRP)
+    ]
+    adv_[
+      +(ever ever RB)
+    ]
+    +(have have VBP)
+    n-chunk_[
+      +(occasion occasion NN)
+    ]
+    inf-mk_[
+      +(to to TO)
+      inf_[
+        +(visit visit VB)
+        n-chunk_[
+          +(Houston houston NP)
+        ]
+      ]
+    ]
+    st-brk_[
+      +(. . Fp)
+    ]
+  ]
+]
+sv/top/(delighted delight VBN) [
+  mod-chunk/aux/(would would MD)
+  vb-be/aux/(be be VB)
+  sn-chunk/ncsubj/(I i PRP)
+  inf-mk/iobj/(to to TO) [
+    inf/cmod/(arrange arrange VB) [
+      n-chunk/dobj/(tickets ticket NNS)
+      sp-chunk/ncmod/(for for IN) [
+        sn-chunk/dobj/(you you PRP)
+      ]
+    ]
+  ]
+  sn-co/modnomatch/(and and CC) [
+    sn-chunk/modnorule/(family family NN) [
+      PRP$/ncmod-poss/(your your PRP$)
+    ]
+  ]
+  mod-chunk/aux/(should should MD)
+  claus/ccomp/(have have VBP) [
+    sn-chunk/ncsubj/(you you PRP)
+    adv/ncmod/(ever ever RB)
+    n-chunk/dobj/(occasion occasion NN)
+    inf-mk/iobj/(to to TO) [
+      inf/cmod/(visit visit VB) [
+        n-chunk/dobj/(Houston houston NP)
+      ]
+    ]
+    st-brk/ta/(. . Fp)
+  ]
+]
+I i PRP 
+hope hope VBP 00706047-v:0/01811441-v:0/01826723-v:0
+you you PRP 
+have have VBP 00056930-v:0/00065370-v:0/00065639-v:0/00120796-v:0/00121046-v:0/00770437-v:0/01156834-v:0/01427127-v:0/01733477-v:0/02108026-v:0/02203362-v:0/02204692-v:0/02205098-v:0/02210119-v:0/02236124-v:0/02355596-v:0/02378453-v:0/02630189-v:0/02740745-v:0
+a a DT 
+great great JJ 00173391-a:0/01123879-a:0/01278818-a:0/01386883-a:0/01467919-a:0/01677433-a:0
+summer summer NN 15145012-n:0/15237250-n:0
+. . Fp 
+
++claus_[
+  sn-chunk_[
+    +(I i PRP)
+  ]
+  +(hope hope VBP)
+  sv_[
+    sn-chunk_[
+      +(you you PRP)
+    ]
+    +(have have VBP)
+    sn-chunk_[
+      (a a DT)
+      +n-chunk_[
+        attrib_[
+          +(great great JJ)
+        ]
+        +n-chunk_[
+          +(summer summer NN)
+        ]
+      ]
+    ]
+  ]
+  st-brk_[
+    +(. . Fp)
+  ]
+]
+claus/top/(hope hope VBP) [
+  sn-chunk/ncsubj/(I i PRP)
+  sv/ccomp/(have have VBP) [
+    sn-chunk/ncsubj/(you you PRP)
+    sn-chunk/dobj/(summer summer NN) [
+      DT/det/(a a DT)
+      attrib/ncmod/(great great JJ)
+    ]
+  ]
+  st-brk/ta/(. . Fp)
+]

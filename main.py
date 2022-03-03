@@ -25,7 +25,7 @@ def main():
         "-l", "--lang", default="en", help="language selection. Default English"
     )
     ap.add_argument("-r", "--rootdir", default="../maildir/", help="root directory")
-    ap.add_argument("-s", "--sender", default="arora-h", help="person emails")
+    ap.add_argument("-s", "--sender", default="lay-k", help="person emails")
 
     args = vars(ap.parse_args())
 
