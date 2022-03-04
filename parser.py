@@ -56,13 +56,11 @@ def preprocess_recipients(recipient):
         return None
 
 
-def obtain_features(email_list):
-    email_dict = {}
-    for num, mail in email_list:
-        email_dict[mail['message-id']] = {
+def obtain_base_features(mail):
+    email_dict={}
+    email_dict[mail['message-id']] = {
             'from': mail['from'],
             'to': preprocess_recipients(mail['to']),
             'date': mail['date'],
-            'features': {}
         }
     return email_dict

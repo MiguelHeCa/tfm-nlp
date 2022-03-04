@@ -36,10 +36,20 @@ def main():
     email_list.sort(key=lambda x: x[0])
     pureThreads = parser.obtain_raw_threads(mail_dict, email_list)
 
-    print(parser.obtain_features(email_list[:30]))
+    anal=analyzer.freeling_analyzer(basedir,"en")
+    mailsWithFeatures={}
+    for mail in email_list:
+        actualEmail=mail[1]
+        mailsWithFeatures[mail]=parser.obtain_base_features(actualEmail)
+        ls=anal.obtain_tokens(actualEmail,mailsWithFeatures[mail])
+        #Rellenar esta parte comentada
+        #analyzer.obtain_lema(ls,mailsWithFeatures[actualEmail])
+        #analyzer.obtain_PoS_features(ls,mailsWithFeatures[actualEmail])
+    print(mailsWithFeatures)
+
+
     # email_sample = email_list[0][1].get_payload()
     # print(email_sample)
-    #
     # # Analyze emails
     # fla = analyzer.freeling_analyzer(basedir, args['lang'])
     # fla.setup()

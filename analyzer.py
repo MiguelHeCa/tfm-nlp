@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-Freeling analyzer with configurations
+Output parser for the analyzer
 """
 import sys
 import os
@@ -20,7 +20,10 @@ class freeling_analyzer(object):
         self.mf = None
         self.tg = None
         self.sen = None
+        self.parser = None
         self.dep = None
+        self.setup()
+
 
     # ------------  output a parse tree ------------
     def printTree(self, ptree, depth):
@@ -58,7 +61,7 @@ class freeling_analyzer(object):
 
         print("".rjust(depth * 2), end="")
 
-        info = node.get_info()
+        info = node.get_info() 
         print(info.get_label() + "/", end="")
 
         w = node.get_info().get_word()
@@ -104,8 +107,8 @@ class freeling_analyzer(object):
             print(
                 "Folder",
                 os.environ["FREELINGDIR"] + "/share/freeling",
-                "not found.\n"
-                + "Please set FREELINGDIR environment variable to FreeLing installation directory",
+                "not found.\n" +
+                "Please set FREELINGDIR environment variable to FreeLing installation directory",
                 file=sys.stderr,
             )
             sys.exit(1)
@@ -115,6 +118,10 @@ class freeling_analyzer(object):
 
         # Init locales
         pyfreeling.util_init_locale("default")
+
+        # create language detector. Used just to show it. Results are printed
+        # but ignored (after, it is assumed language is LANG)
+        # la = pyfreeling.lang_ident(DATA + "common/lang_ident/ident-few.dat")
 
         # create options set for maco analyzer.
         # Default values are Ok, except for data files.
@@ -158,9 +165,11 @@ class freeling_analyzer(object):
         # create tagger, sense anotator, and parsers
         self.tg = pyfreeling.hmm_tagger(DATA + LANG + "/tagger.dat", True, 2)
         self.sen = pyfreeling.senses(DATA + LANG + "/senses.dat")
-        self.dep = pyfreeling.dep_lstm(DATA + LANG + "/dep_lstm/params-en.dat")
+        self.dep = pyfreeling.dep_lstm(
+            DATA + LANG + "/dep_lstm/params-en.dat")
 
     def process(self, msg):
+
         for lin in io.StringIO(msg):
             l = self.tk.tokenize(lin)
             ls = self.sp.split(self.sid, l, False)
@@ -190,3 +199,22 @@ class freeling_analyzer(object):
 
         # clean up
         self.sp.close_session(self.sid)
+
+
+    def obtain_tokens(self,actualEmail, feature_Dictionary):
+        for lin in io.StringIO(actualEmail.get_payload()):
+            l = self.tk.tokenize(lin)
+            ls = self.sp.split(self.sid, l, False)
+        for s in ls:
+            ws = s.get_words()
+            for w in ws:
+                key=w.get_form()
+                add_to_dict(key,feature_Dictionary)
+        return ls
+
+
+def add_to_dict(key, feature_Dictionary):
+    if key in feature_Dictionary:
+        feature_Dictionary[key]+=1
+    else:
+        feature_Dictionary[key]=1
