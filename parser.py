@@ -57,10 +57,10 @@ def preprocess_recipients(recipient):
 
 
 def obtain_base_features(mail):
-    email_dict={}
+    email_dict = {}
     email_dict[mail['message-id']] = {
             'from': mail['from'],
-            # 'to': preprocess_recipients(mail['to']),
+            'to': preprocess_recipients(mail['to']),
             'date': mail['date'],
         }
     return email_dict
