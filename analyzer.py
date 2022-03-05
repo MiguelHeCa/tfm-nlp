@@ -20,7 +20,7 @@ class FreelingAnalyzer(object):
         self.mf = None
         self.tg = None
         self.sen = None
-        self.parser = None
+        # self.parser = None
         self.dep = None
         self.setup()
 
@@ -81,18 +81,18 @@ class FreelingAnalyzer(object):
 
         # activate morpho modules to be used in next call
         self.mf.set_active_options(
-            False,
-            True,
-            True,
-            True,  # select which among created
-            True,
-            True,
-            False,
-            True,  # submodules are to be used.
-            True,
-            True,
-            True,
-            True,
+            False,  # UserMap
+            True,  # NumbersDetection
+            True,  # PunctuationDetection
+            True,  # DatesDetection
+            True,  # DictionarySearch
+            True,  # AffixAnalysis
+            False,  # CompoundAnalysis
+            True,  # RetokContractions
+            True,  # MultiwordsDetection
+            True,  # NERecognition
+            True,  # QuantitiesDetection
+            True  # ProbabilityAssignment
         )
         # default: all created submodules are used
 
@@ -102,60 +102,46 @@ class FreelingAnalyzer(object):
         self.dep = pyfreeling.dep_lstm(
             DATA + LANG + "/dep_lstm/params-en.dat")
 
-    def process(self, text, token=True, lemma=False, pos=False):
-        features = {}
-        if token:
-            features['tokens'] = self.obtain_tokens(text)
-        if lemma:
-            features['lemmas'] = self.obtain_lemmas(text)
-        if pos:
-            features['PoS'] = self.obtain_pos(text)
-
-        self.sp.close_session(self.sid)
-        return features
-
     def obtain_tokens(self, text):
         results = {}
         for lin in io.StringIO(text.get_payload()):
-            if lin.strip():
-                lw = self.tk.tokenize(lin)
-                ls = self.sp.split(self.sid, lw, False)
-                if len(ls) > 0:
-                    ws = ls[0].get_words()
-                    for w in ws:
-                        key = w.get_form()
-                        add_to_dict(key, results)
+            lw = self.tk.tokenize(lin.strip())
+            ls = self.sp.split(self.sid, lw, False)
+            for s in ls:
+                ws = s.get_words()
+                for w in ws:
+                    key = f'{w.get_form()}'
+                    add_to_dict(key, results)
         return results
 
     def obtain_lemmas(self, text):
         results = {}
         for lin in io.StringIO(text.get_payload()):
-            if lin.strip():
-                lw = self.tk.tokenize(lin)
-                ls = self.sp.split(self.sid, lw, False)
-                ls = self.mf.analyze(ls)
-                if len(ls) > 0:
-                    ws = ls[0].get_words()
-                    for w in ws:
-                        key = f'{w.get_form()}_{w.get_lemma()}'
-                        add_to_dict(key, results)
+            lw = self.tk.tokenize(lin.strip())
+            ls = self.sp.split(self.sid, lw, False)
+            ls = self.mf.analyze(ls)
+            for s in ls:
+                ws = s.get_words()
+                for w in ws:
+                    key = f'{w.get_form()}_Lemma_{w.get_lemma()}'
+                    add_to_dict(key, results)
         return results
 
     def obtain_pos(self, text):
         results = {}
         for lin in io.StringIO(text.get_payload()):
-            if lin.strip():
-                lw = self.tk.tokenize(lin)
-                ls = self.sp.split(self.sid, lw, False)
-                ls = self.mf.analyze(ls)
-                ls = self.tg.analyze(ls)
-                ls = self.sen.analyze(ls)
-                if len(ls) > 0:
-                    ws = ls[0].get_words()
-                    for w in ws:
-                        key = f'{w.get_form()}_{w.get_tag()}'
-                        add_to_dict(key, results)
+            lw = self.tk.tokenize(lin.strip())
+            ls = self.sp.split(self.sid, lw, False)
+            ls = self.tg.analyze(ls)
+            for s in ls:
+                ws = s.get_words()
+                for w in ws:
+                    key = f'{w.get_form()}_PoS_{w.get_tag()}'
+                    add_to_dict(key, results)
         return results
+
+    def close(self):
+        self.sp.close_session(self.sid)
 
 
 def add_to_dict(key, feature_dictionary):
