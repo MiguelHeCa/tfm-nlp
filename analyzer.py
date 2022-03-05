@@ -10,7 +10,7 @@ import io
 import pyfreeling
 
 
-class freeling_analyzer(object):
+class FreelingAnalyzer(object):
     def __init__(self, folder, lang):
         self.folder = folder
         self.lang = lang
@@ -23,72 +23,6 @@ class freeling_analyzer(object):
         self.parser = None
         self.dep = None
         self.setup()
-
-
-    # ------------  output a parse tree ------------
-    def printTree(self, ptree, depth):
-
-        node = ptree.begin()
-
-        print("".rjust(depth * 2), end="")
-        info = node.get_info()
-        if info.is_head():
-            print("+", end="")
-
-        nch = node.num_children()
-        if nch == 0:
-            w = info.get_word()
-            print(
-                "({0} {1} {2})".format(w.get_form(), w.get_lemma(), w.get_tag()), end=""
-            )
-
-        else:
-            print("{0}_[".format(info.get_label()))
-
-            for i in range(nch):
-                child = node.nth_child_ref(i)
-                self.printTree(child, depth + 1)
-
-            print("".rjust(depth * 2), end="")
-            print("]", end="")
-
-        print("")
-
-    # ------------  output a parse tree ------------
-    def printDepTree(self, dtree, depth):
-
-        node = dtree.begin()
-
-        print("".rjust(depth * 2), end="")
-
-        info = node.get_info() 
-        print(info.get_label() + "/", end="")
-
-        w = node.get_info().get_word()
-        print("({0} {1} {2})".format(w.get_form(), w.get_lemma(), w.get_tag()), end="")
-
-        nch = node.num_children()
-        if nch > 0:
-            print(" [")
-
-            for i in range(nch):
-                d = node.nth_child_ref(i)
-                if not d.begin().get_info().is_chunk():
-                    self.printDepTree(d, depth + 1)
-
-            ch = {}
-            for i in range(nch):
-                d = node.nth_child_ref(i)
-                if d.begin().get_info().is_chunk():
-                    ch[d.begin().get_info().get_chunk_ord()] = d
-
-            for i in sorted(ch.keys()):
-                self.printDepTree(ch[i], depth + 1)
-
-            print("".rjust(depth * 2), end="")
-            print("]", end="")
-
-        print("")
 
     def setup(self):
         # Check whether we know where to find FreeLing data files
@@ -168,53 +102,64 @@ class freeling_analyzer(object):
         self.dep = pyfreeling.dep_lstm(
             DATA + LANG + "/dep_lstm/params-en.dat")
 
-    def process(self, msg):
+    def process(self, text, token=True, lemma=False, pos=False):
+        features = {}
+        if token:
+            features['tokens'] = self.obtain_tokens(text)
+        if lemma:
+            features['lemmas'] = self.obtain_lemmas(text)
+        if pos:
+            features['PoS'] = self.obtain_pos(text)
 
-        for lin in io.StringIO(msg):
-            l = self.tk.tokenize(lin)
-            ls = self.sp.split(self.sid, l, False)
-
-            ls = self.mf.analyze(ls)
-            ls = self.tg.analyze(ls)
-            ls = self.sen.analyze(ls)
-            ls = self.dep.analyze(ls)
-
-            # output results
-            for s in ls:
-                ws = s.get_words()
-                for w in ws:
-                    print(
-                        w.get_form()
-                        + " "
-                        + w.get_lemma()
-                        + " "
-                        + w.get_tag()
-                        + " "
-                        + w.get_senses_string()
-                    )
-                print("")
-
-                dp = s.get_dep_tree()
-                self.printDepTree(dp, 0)
-
-        # clean up
         self.sp.close_session(self.sid)
+        return features
+
+    def obtain_tokens(self, text):
+        results = {}
+        for lin in io.StringIO(text.get_payload()):
+            if lin.strip():
+                lw = self.tk.tokenize(lin)
+                ls = self.sp.split(self.sid, lw, False)
+                if len(ls) > 0:
+                    ws = ls[0].get_words()
+                    for w in ws:
+                        key = w.get_form()
+                        add_to_dict(key, results)
+        return results
+
+    def obtain_lemmas(self, text):
+        results = {}
+        for lin in io.StringIO(text.get_payload()):
+            if lin.strip():
+                lw = self.tk.tokenize(lin)
+                ls = self.sp.split(self.sid, lw, False)
+                ls = self.mf.analyze(ls)
+                if len(ls) > 0:
+                    ws = ls[0].get_words()
+                    for w in ws:
+                        key = f'{w.get_form()}_{w.get_lemma()}'
+                        add_to_dict(key, results)
+        return results
+
+    def obtain_pos(self, text):
+        results = {}
+        for lin in io.StringIO(text.get_payload()):
+            if lin.strip():
+                lw = self.tk.tokenize(lin)
+                ls = self.sp.split(self.sid, lw, False)
+                ls = self.mf.analyze(ls)
+                ls = self.tg.analyze(ls)
+                ls = self.sen.analyze(ls)
+                if len(ls) > 0:
+                    ws = ls[0].get_words()
+                    for w in ws:
+                        key = f'{w.get_form()}_{w.get_tag()}'
+                        add_to_dict(key, results)
+        return results
 
 
-    def obtain_tokens(self,actualEmail, feature_Dictionary):
-        for lin in io.StringIO(actualEmail.get_payload()):
-            l = self.tk.tokenize(lin)
-            ls = self.sp.split(self.sid, l, False)
-        for s in ls:
-            ws = s.get_words()
-            for w in ws:
-                key=w.get_form()
-                add_to_dict(key,feature_Dictionary)
-        return ls
-
-
-def add_to_dict(key, feature_Dictionary):
-    if key in feature_Dictionary:
-        feature_Dictionary[key]+=1
+def add_to_dict(key, feature_dictionary):
+    if key in feature_dictionary:
+        feature_dictionary[key] += 1
     else:
-        feature_Dictionary[key]=1
+        feature_dictionary[key] = 1
