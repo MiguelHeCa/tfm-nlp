@@ -44,7 +44,7 @@ def main():
 
     print('Getting features...')
     mailsWithFeatures = {}
-    for mail in email_list[:2]:
+    for mail in email_list:
         actualEmail = mail[1]
         mailsWithFeatures[mail] = parser.obtain_base_features(actualEmail)
         if args['token']:
