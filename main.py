@@ -1,62 +1,52 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 # -*- coding: utf-8 -*-
+# vim:fenc=utf-8
+#
+# Copyright © 2022 miguelHeCa <jose.miguel.heca@gmail.com>
+#
+# Distributed under terms of the MIT license.
 
 """
-Main program for to parse mails
+Transforming data
 """
 
-import argparse
-import os
+# Built-in modules
+import email
+import pprint
 
-import parser
-import analyzer
+# Third-party modules
+
+# Importing methods from modules
+from pathlib import Path
+
+
+def parse_email(input_file):
+    """
+    Obtain mail
+    """
+    with open(input_file, 'r', encoding='utf-8') as f:
+        message = f.read()
+
+    return email
+
+
+def get_email_id(input_file):
+    """
+    Set ID from emails parent directories
+    """
+    email_dir = '/'.join(str(input_file).split('/')[-3:])
+
+    return email_dir
 
 
 def main():
-    # Construct arguments parser
-    ap = argparse.ArgumentParser()
+    emails_path = Path(Path.cwd().parent, 'maildir')
+    emails_list = emails_path.rglob('*.')
 
-    # Add arguments
-    ap.add_argument(
-        "-l", "--lang", default="en", help="Language selection. Default English"
-    )
-    ap.add_argument("-r", "--rootdir", default="../maildir/", help="Root directory")
-    ap.add_argument("-s", "--sender", default="lay-k", help="Person emails folder")
-    ap.add_argument("-t", "--token", action='store_false', help="Get token. Default True")
-    ap.add_argument("-m", "--lemma", action='store_true', help="Get lemmas. Default False")
-    ap.add_argument("-p", "--pos", action='store_true', help="Get PoS. Default False")
-
-    args = vars(ap.parse_args())
-
-    basedir = args["rootdir"] + "/" + args["sender"]
-
-    # Parsing emails
-    mail_dict = {}
-    email_list = []
-    for directory, subdirectory, filenames in os.walk(basedir):
-        for filename in filenames:
-            parser.raw_parse(os.path.join(directory, filename), email_list)
-    email_list.sort(key=lambda x: x[0])
-    pureThreads = parser.obtain_raw_threads(mail_dict, email_list)
-
-    print('Initializing Freeling...')
-    anal = analyzer.FreelingAnalyzer(basedir, args["lang"])
-
-    print('Getting features...')
-    mailsWithFeatures = {}
-    for mail in email_list:
-        actualEmail = mail[1]
-        mailsWithFeatures[mail] = parser.obtain_base_features(actualEmail)
-        if args['token']:
-            mailsWithFeatures[mail][actualEmail['message-id']]['tokens'] = anal.obtain_tokens(actualEmail)
-        if args['lemma']:
-            mailsWithFeatures[mail][actualEmail['message-id']]['lemmas'] = anal.obtain_lemmas(actualEmail)
-        if args['pos']:
-            mailsWithFeatures[mail][actualEmail['message-id']]['pos'] = anal.obtain_pos(actualEmail)
-
-    print(mailsWithFeatures[mail])
-    anal.close()
+    for email in emails_list:
+        # print({email: parse_email(email)})
+        pprint.pprint({get_email_id(email): parse_email(email)})
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

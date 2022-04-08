@@ -104,7 +104,8 @@ class FreelingAnalyzer(object):
 
     def obtain_tokens(self, text):
         results = {}
-        for lin in io.StringIO(text.get_payload()):
+        # for lin in io.StringIO(text.get_payload()):
+        for lin in io.StringIO(text):
             lw = self.tk.tokenize(lin.strip())
             ls = self.sp.split(self.sid, lw, False)
             for s in ls:
@@ -116,7 +117,8 @@ class FreelingAnalyzer(object):
 
     def obtain_lemmas(self, text):
         results = {}
-        for lin in io.StringIO(text.get_payload()):
+        # for lin in io.StringIO(text.get_payload()):
+        for lin in io.StringIO(text):
             lw = self.tk.tokenize(lin.strip())
             ls = self.sp.split(self.sid, lw, False)
             ls = self.mf.analyze(ls)
@@ -129,7 +131,8 @@ class FreelingAnalyzer(object):
 
     def obtain_pos(self, text):
         results = {}
-        for lin in io.StringIO(text.get_payload()):
+        # for lin in io.StringIO(text.get_payload()):
+        for lin in io.StringIO(text):
             lw = self.tk.tokenize(lin.strip())
             ls = self.sp.split(self.sid, lw, False)
             ls = self.tg.analyze(ls)
