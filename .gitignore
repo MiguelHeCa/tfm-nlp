@@ -138,3 +138,7 @@ dmypy.json
 *.p
 *.pickle
 *.pkl
+
+# Data files
+
+data/raw/enron_mail_20150507.tar.gz
