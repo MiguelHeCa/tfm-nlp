@@ -142,3 +142,4 @@ dmypy.json
 # Data files
 
 data/raw/enron_mail_20150507.tar.gz
+data/raw/maildir/
