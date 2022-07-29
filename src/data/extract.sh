@@ -27,7 +27,7 @@ check_enron_dld () {
 }
 
 enron_extraction () {
-    echo "Extracting Enron emails. This could take several minutes..."
+    echo "Extracting Enron emails. This may take several minutes..."
     echo "Extracting emails"
     tar -xf $ENRON_TAR -C $DATA_DIR
     echo "Enron emails extracted."
@@ -55,5 +55,6 @@ else
     enron_extraction
 fi
 
-echo "Enron emails are ready for analysis."
+echo "Removing tar from directory"
 rm $ENRON_TAR
+echo "Enron emails are ready for analysis."
