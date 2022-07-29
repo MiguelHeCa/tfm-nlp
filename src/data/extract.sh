@@ -56,3 +56,4 @@ else
 fi
 
 echo "Enron emails are ready for analysis."
+rm $ENRON_TAR
