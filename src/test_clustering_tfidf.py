@@ -15,6 +15,7 @@ import csv
 import gc
 import pickle as pkl
 
+import cupy as cp
 import numpy as np
 
 from collections import Counter
@@ -28,18 +29,6 @@ from cuml.cluster import DBSCAN, KMeans
 from sklearn.metrics import calinski_harabasz_score, davies_bouldin_score
 from cuml.metrics.cluster.silhouette_score import cython_silhouette_score
 from cuml.metrics.cluster.entropy import cython_entropy
-
-
-def parse_distance_file(dataset, distance):
-    if distance == 'wmd':
-        mid_string = '_'.join(dataset.split('_')[:-1])
-        size = int(dataset.split('_')[-1])
-        if size == 300:
-            size = 256
-        filename = f'{distance}_dist_{mid_string}_{size}.npy'
-    else:
-        filename = f'{distance}_dist_{dataset}.npy'
-    return filename
 
 
 def export_results(path, data=None):
@@ -68,17 +57,10 @@ def export_labels(labels, file):
 
 
 def get_kmeans(data, dataset, distance, n_clusters):
-    labels_file = Path(labels_dir, f'labels_km_{dataset}_{n_clusters:02d}_{distance}.pkl')
+    labels_file = Path(labels_dir, f'labels_km_tfidf_{dataset}_{n_clusters:02d}_{distance}.pkl')
     if labels_file.is_file():
         labels = load_labels(labels_file)
-    else:
-        distance_file = Path(data_dir, distance, parse_distance_file(dataset, distance))
-        # print('Distance Matrix:', distance_file)
-        if distance_file.is_file():
-            data = np.load(distance_file)
-        else:
-            print(f'{distance.capitalize()} distance matrix not found.')
-        
+    else:     
         km = KMeans(n_clusters=n_clusters)
         km.fit(data)
         labels = km.labels_.tolist()
@@ -88,20 +70,14 @@ def get_kmeans(data, dataset, distance, n_clusters):
 
 
 def get_dbscan(data, dataset, distance, epsilon, min_pts):
-    labels_file = Path(labels_dir, f'labels_dbscan_{dataset}_{epsilon}_{min_pts:02d}_{distance}.pkl')
+    labels_file = Path(labels_dir, f'labels_dbscan_tfidf_{dataset}_{epsilon}_{min_pts:02d}_{distance}.pkl')
     if labels_file.is_file():
         labels = load_labels(labels_file)
-    else:
-        distance_file = Path(data_dir, distance, parse_distance_file(dataset, distance))
-        if distance_file.is_file():
-            data = np.load(distance_file)
-            distance = 'precomputed'
-        else:
-            print(f'{distance.capitalize()} distance matrix not found.')
-        
+    else:     
         db = DBSCAN(eps=epsilon,
                     min_samples=min_pts,
-                    metric=distance
+                    metric='precomputed'
+                    # metric=distance
                    ).fit(data)
         labels = db.labels_
         export_labels(labels, labels_file)
@@ -110,7 +86,7 @@ def get_dbscan(data, dataset, distance, epsilon, min_pts):
 
 
 def get_hdbscan(data, dataset, distance, min_clt_size, min_samples):
-    labels_file = Path(labels_dir, f'labels_hdbscan_{dataset}_{min_clt_size:02d}_{min_samples:02d}_{distance}.pkl')
+    labels_file = Path(labels_dir, f'labels_hdbscan_tfidf_{dataset}_{min_clt_size:02d}_{min_samples:02d}_{distance}.pkl')
     if labels_file.is_file():
         labels = load_labels(labels_file)
     else:
@@ -122,20 +98,13 @@ def get_hdbscan(data, dataset, distance, min_clt_size, min_samples):
                 ).fit(data)
             labels = clusterer.labels_
         else:
-            # print('Using CPU to compute HDBSCAN. This may take a while...')
-            distance_file = Path(data_dir, distance, parse_distance_file(dataset, distance))
-            if distance_file.is_file():
-                data = np.load(distance_file)
-                distance = 'precomputed'
-                clusterer = HDBSCAN(
-                    min_cluster_size=min_clt_size,
-                    min_samples=min_samples,
-                    metric=distance
-                    ).fit(data.astype(np.float64))
-                labels = clusterer.labels_
-            else:
-                print(f'{distance.capitalize()} distance matrix not found. Terminating program.')
-                exit()
+            distance = 'precomputed'
+            clusterer = HDBSCAN(
+                min_cluster_size=min_clt_size,
+                min_samples=min_samples,
+                metric=distance
+                ).fit(data.astype(np.float64))
+            labels = clusterer.labels_
 
         export_labels(labels, labels_file)
     
@@ -170,10 +139,10 @@ def evaluate_cluster(data, labels, distance, method, n_clusters=None):
         n_clusters = n_clusters
         results['n_clusters'] = n_clusters
     
-    clust_data = np.asarray(clust_data)
+    # clust_data = np.asarray(clust_data)
+    clust_data = clust_data.get()
     clust_labs = np.asarray(clust_labs)
     
-    # if len(clust_labs) == n_clusters or n_clusters < 2:
     if n_clusters < 2:
         results.update({'sl_score': None, 'ch_score': None, 'db_score': None, 'entropy': None})
     
@@ -184,20 +153,6 @@ def evaluate_cluster(data, labels, distance, method, n_clusters=None):
             'db_score': davies_bouldin_score(clust_data, clust_labs),
             'entropy' : cython_entropy(clust_labs.astype(np.int32))
         })
-        # if method != 'km':
-        #     results.update({
-        #         'sl_score': cython_silhouette_score(clust_data, clust_labs, metric=distance),
-        #         'ch_score': calinski_harabasz_score(clust_data, clust_labs),
-        #         'db_score': davies_bouldin_score(clust_data, clust_labs),
-        #         'entropy' : cython_entropy(clust_labs.astype(np.int32))
-        #     })
-        # else:
-        #     results.update({
-        #         'sl_score': cython_silhouette_score(clust_data, clust_labs, metric=distance),
-        #         'ch_score': calinski_harabasz_score(clust_data, clust_labs),
-        #         'db_score': davies_bouldin_score(clust_data, clust_labs),
-        #         'entropy' : None
-        #     })
 
     return results
 
@@ -217,14 +172,13 @@ def get_results(data, filename, labels, dataset, distance, method, **kwargs):
     export_results(Path(eval_dir, filename + '.csv'), results)
 
 
-def main(path, method, distance, **kwargs):
+def main(path, method, **kwargs):
         
-    filename = f'eval_{method}_{int(datetime.today().timestamp())}'
+    filename = f'eval_tfidf_{method}_{int(datetime.today().timestamp())}'
 
-    model = Doc2Vec.load(str(path))
-    data = model.dv.vectors
-    dataset = '_'.join(path.stem.split('_')[1:])
-
+    dataset = '_'.join(path.stem.split('_')[2:])
+    distance = path.parent.name
+    data = cp.load(f'{path}', allow_pickle=True)
     
     t0 = datetime.now()
 
@@ -260,49 +214,59 @@ def main(path, method, distance, **kwargs):
 
 data_dir = Path('data/interim')
 labels_dir = Path(data_dir, 'labels_0')
-eval_dir = Path(data_dir, 'evals_3')
-models_dir = Path('models')
+eval_dir = Path(data_dir, 'evals_2')
 
-mod_paths = sorted([mod_path for mod_path in Path(models_dir).glob('d2v*.model')])
+# models_dir = Path('models')
+
+# mod_paths = sorted([mod_path for mod_path in Path(data_dir, 'tfidf').glob('tfidf*.npy')])
 
 # KMeans
 # start = datetime.now()
-
-# for p in mod_paths[2:]:
-#     main(p, 'km', 'euclidean')
+# tfidf_dir = sorted([p for p in Path(data_dir, 'euclidean').glob('tfidf*.npy')])
+# for p in tfidf_dir[1:]:
+#     main(p, 'km')
 #     gc.collect()
-#     main(p, 'km', 'cosine')
-#     gc.collect()
-#     main(p, 'km', 'wmd')
+# tfidf_dir = sorted([p for p in Path(data_dir, 'cosine').glob('tfidf*.npy')])
+# for p in tfidf_dir[1:]:
+#     main(p, 'km')
 #     gc.collect()
 
 # print(f'Finished dataset. It took {datetime.now()-start}')
 
 # DBSCAN
 
-start = datetime.now()
-for p in mod_paths:
-    
-    main(p, 'dbscan', 'euclidean')
+tfidf_dir = sorted([p for p in Path(data_dir, 'euclidean').glob('tfidf*.npy')])
+for p in tfidf_dir:
+    main(p, 'dbscan')
     gc.collect()
-    main(p, 'dbscan', 'cosine')
-    gc.collect()
-    main(p, 'dbscan', 'wmd')
-    gc.collect()
+# tfidf_dir = sorted([p for p in Path(data_dir, 'cosine').glob('tfidf*.npy')])
+# for p in tfidf_dir:
+#     main(p, 'dbscan')
+#     gc.collect()
 
-print(f'Finished dataset. It took {datetime.now()-start}')
+# start = datetime.now()
+# for p in Path(data_dir, 'tfidf').glob('tfidf*.npy'):
+    
+#     main(p, 'dbscan', 'euclidean')
+#     gc.collect()
+#     main(p, 'dbscan', 'cosine')
+#     gc.collect()
+#     main(p, 'dbscan', 'wmd')
+#     gc.collect()
+
+# print(f'Finished dataset. It took {datetime.now()-start}')
 
 
 # HDBSCAN
 
-start = datetime.now()
-for p in mod_paths[2:]:
-    print(p)
-    main(p, 'hdbscan', 'euclidean')
-    gc.collect()
-    main(p, 'hdbscan', 'cosine')
-    gc.collect()
-    main(p, 'hdbscan', 'wmd')
-    gc.collect()
-print(f'Finished all datasets. Took {datetime.now()-start}')
+# start = datetime.now()
+# for p in Path(data_dir, 'tfidf').glob('tfidf*.npy'):
+#     print(p)
+#     main(p, 'hdbscan', 'euclidean')
+#     gc.collect()
+#     main(p, 'hdbscan', 'cosine')
+#     gc.collect()
+#     main(p, 'hdbscan', 'wmd')
+#     gc.collect()
+# print(f'Finished all datasets. Took {datetime.now()-start}')
 
