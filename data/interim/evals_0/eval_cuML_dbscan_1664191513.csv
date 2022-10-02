@@ -1,0 +1,2 @@
+distance,dataset,epsilon,min_pts,n_clusters,n_noise,sl_score,ch_score,db_score,entropy
+cosine,chains_eq_3_300,0.5,10,1,124,,,,

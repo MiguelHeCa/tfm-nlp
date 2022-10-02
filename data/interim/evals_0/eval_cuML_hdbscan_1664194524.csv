@@ -1,0 +1,2 @@
+distance,dataset,min_clt_size,min_samples,n_clusters,n_noise,sl_score,ch_score,db_score,entropy
+wmd,chains_eq_3_300,5,5,5,4256,0.25481298565864563,3.979153351467252,3.5557401335349086,0.043172352434161114
