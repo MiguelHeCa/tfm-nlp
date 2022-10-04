@@ -283,10 +283,10 @@ mod_paths = sorted([mod_path for mod_path in Path(models_dir).glob('d2v*.model')
 start = datetime.now()
 for p in mod_paths:
     
-    main(p, 'dbscan', 'euclidean')
-    gc.collect()
-    main(p, 'dbscan', 'cosine')
-    gc.collect()
+    # main(p, 'dbscan', 'euclidean')
+    # gc.collect()
+    # main(p, 'dbscan', 'cosine')
+    # gc.collect()
     main(p, 'dbscan', 'wmd')
     gc.collect()
 
@@ -295,14 +295,13 @@ print(f'Finished dataset. It took {datetime.now()-start}')
 
 # HDBSCAN
 
-start = datetime.now()
-for p in mod_paths[2:]:
-    print(p)
-    main(p, 'hdbscan', 'euclidean')
-    gc.collect()
-    main(p, 'hdbscan', 'cosine')
-    gc.collect()
-    main(p, 'hdbscan', 'wmd')
-    gc.collect()
-print(f'Finished all datasets. Took {datetime.now()-start}')
+# start = datetime.now()
+# for p in mod_paths[2:]:
+    # main(p, 'hdbscan', 'euclidean')
+    # gc.collect()
+    # main(p, 'hdbscan', 'cosine')
+    # gc.collect()
+#     main(p, 'hdbscan', 'wmd')
+#     gc.collect()
+# print(f'Finished all datasets. Took {datetime.now()-start}')
 
