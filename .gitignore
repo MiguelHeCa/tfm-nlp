@@ -138,6 +138,8 @@ dmypy.json
 *.p
 *.pickle
 *.pkl
+*.npy
+*.model
 
 # Data files
 
