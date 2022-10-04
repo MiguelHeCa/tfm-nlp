@@ -145,3 +145,17 @@ dmypy.json
 
 data/raw/enron_mail_20150507.tar.gz
 data/raw/maildir/
+
+# Un-ignored data files
+!data/interim/labels_0/labels_dbscan_chains_eq_2_50_0.54_02_wmd.pkl
+!data/interim/labels_0/labels_dbscan_chains_eq_2_300_0.82_05_euclidean.pkl
+!data/interim/labels_0/labels_dbscan_chains_eq_2_300_0.76_02_euclidean.pkl
+!data/interim/labels_0/labels_km_chains_eq_3_300_02_cosine.pkl
+!data/interim/labels_0/labels_dbscan_chains_eq_3_50_0.83_04_euclidean.pkl
+!data/interim/labels_0/labels_dbscan_chains_eq_3_50_0.25_03_wmd.pkl
+!data/interim/labels_0/labels_km_chains_ge_4_lt_10_50_02_wmd.pkl
+!data/interim/labels_0/labels_dbscan_chains_ge_4_lt_10_300_0.2_13_wmd.pkl
+!data/interim/labels_0/labels_dbscan_chains_ge_4_lt_10_50_0.66_04_euclidean.pkl
+!data/interim/labels_0/labels_dbscan_chains_ge_10_50_0.56_02_euclidean.pkl
+!data/interim/labels_0/labels_dbscan_chains_ge_10_300_0.63_02_euclidean.pkl
+!data/interim/labels_0/labels_km_chains_ge_10_50_02_cosine.pkl
