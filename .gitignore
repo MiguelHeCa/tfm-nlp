@@ -159,3 +159,6 @@ data/raw/maildir/
 !data/interim/labels_0/labels_dbscan_chains_ge_10_50_0.56_02_euclidean.pkl
 !data/interim/labels_0/labels_dbscan_chains_ge_10_300_0.63_02_euclidean.pkl
 !data/interim/labels_0/labels_km_chains_ge_10_50_02_cosine.pkl
+
+#
+.vscode/launch.json
