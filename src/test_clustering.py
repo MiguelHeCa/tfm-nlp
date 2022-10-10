@@ -73,7 +73,7 @@ def get_kmeans(data, dataset, distance, n_clusters):
         labels = load_labels(labels_file)
     else:
         distance_file = Path(data_dir, distance, parse_distance_file(dataset, distance))
-        # print('Distance Matrix:', distance_file)
+        
         if distance_file.is_file():
             data = np.load(distance_file)
         else:
@@ -122,7 +122,6 @@ def get_hdbscan(data, dataset, distance, min_clt_size, min_samples):
                 ).fit(data)
             labels = clusterer.labels_
         else:
-            # print('Using CPU to compute HDBSCAN. This may take a while...')
             distance_file = Path(data_dir, distance, parse_distance_file(dataset, distance))
             if distance_file.is_file():
                 data = np.load(distance_file)
@@ -143,7 +142,7 @@ def get_hdbscan(data, dataset, distance, min_clt_size, min_samples):
 
 
 def evaluate_cluster(data, labels, distance, method, n_clusters=None):
-    # print('Evaluating clusters...')
+
     results = {}
 
     if distance == 'wmd':
@@ -173,7 +172,6 @@ def evaluate_cluster(data, labels, distance, method, n_clusters=None):
     clust_data = np.asarray(clust_data)
     clust_labs = np.asarray(clust_labs)
     
-    # if len(clust_labs) == n_clusters or n_clusters < 2:
     if n_clusters < 2:
         results.update({'sl_score': None, 'ch_score': None, 'db_score': None, 'entropy': None})
     
@@ -184,20 +182,6 @@ def evaluate_cluster(data, labels, distance, method, n_clusters=None):
             'db_score': davies_bouldin_score(clust_data, clust_labs),
             'entropy' : cython_entropy(clust_labs.astype(np.int32))
         })
-        # if method != 'km':
-        #     results.update({
-        #         'sl_score': cython_silhouette_score(clust_data, clust_labs, metric=distance),
-        #         'ch_score': calinski_harabasz_score(clust_data, clust_labs),
-        #         'db_score': davies_bouldin_score(clust_data, clust_labs),
-        #         'entropy' : cython_entropy(clust_labs.astype(np.int32))
-        #     })
-        # else:
-        #     results.update({
-        #         'sl_score': cython_silhouette_score(clust_data, clust_labs, metric=distance),
-        #         'ch_score': calinski_harabasz_score(clust_data, clust_labs),
-        #         'db_score': davies_bouldin_score(clust_data, clust_labs),
-        #         'entropy' : None
-        #     })
 
     return results
 
@@ -208,7 +192,7 @@ def get_results(data, filename, labels, dataset, distance, method, **kwargs):
         cls_res = evaluate_cluster(data, labels, distance, method, n_clusters)
     elif method=='dbscan':
         cls_res = evaluate_cluster(data, labels, distance, method)
-        cls_res = {'epsilon': kwargs['epsilon'], 'min_pts': kwargs['min_pts']}  | cls_res
+        cls_res = {'epsilon': kwargs['epsilon'], 'min_pts': kwargs['min_pts'], 'nn': kwargs['nn']}  | cls_res
     elif method=='hdbscan':
         cls_res = evaluate_cluster(data, labels, distance, method)
         cls_res = {'min_clt_size': kwargs['min_clt_size'], 'min_samples': kwargs['min_samples']}  | cls_res
@@ -235,18 +219,20 @@ def main(path, method, distance, **kwargs):
             get_results(data, filename, labels, dataset, distance, method, n_clusters=nclust)
             
     elif method=='dbscan':
-        eps_range = [round(e*0.01,3) for e in range(20,101)]
+        nn_file = Path(nn_dir, f"nn_{'_'.join(path.stem.split('_')[1:])}.npy")
+        eps_range = np.load(nn_file)
+        # eps_range = [round(e*0.01,3) for e in range(20,101)]
         min_pts_range = [min_pts for min_pts in range(2,16)]
-        for epsilon in eps_range:
+        for nn, epsilon in eps_range:
             for min_pts in min_pts_range:
                 print(f'Performing {method} and evaluating for {dataset} points with epsilon {epsilon} and {min_pts} minimum points')
                 labels = get_dbscan(data, dataset, distance, epsilon, min_pts)
-                get_results(data, filename, labels, dataset, distance, method, epsilon=epsilon, min_pts=min_pts)
+                get_results(data, filename, labels, dataset, distance, method, epsilon=epsilon, min_pts=min_pts, nn=nn)
                 gc.collect()
 
     elif method=='hdbscan':
-        mcs_range = [mcs for mcs in range(5,21)]
-        min_samples_range = [ms for ms in range(5,21)]
+        mcs_range = [mcs for mcs in range(2,10)]
+        min_samples_range = [ms for ms in range(2,25)]
         for mcs in mcs_range:
             for minsample in min_samples_range:
                 print(f'Performing {method} and evaluating for {dataset} points with {mcs} minimum cluster size and {minsample} minimum sample size')
@@ -259,15 +245,23 @@ def main(path, method, distance, **kwargs):
 
 
 data_dir = Path('data/interim')
-labels_dir = Path(data_dir, 'labels_0')
-eval_dir = Path(data_dir, 'evals_3')
+labels_dir = Path(data_dir, 'labels_2')
+eval_dir = Path(data_dir, 'evals_4')
 models_dir = Path('models')
+nn_dir = Path(data_dir, 'nn')
 
 mod_paths = sorted([mod_path for mod_path in Path(models_dir).glob('d2v*.model')])
 
-# KMeans
-# start = datetime.now()
 
+start = datetime.now()
+
+# for path in mod_paths:
+#     nn_file = Path(nn_dir, f"nn_{'_'.join(path.stem.split('_')[1:])}.npy")
+#     epsilons = np.load(nn_file)
+#     print(path.stem)
+#     print(epsilons)
+
+# KMeans
 # for p in mod_paths[2:]:
 #     main(p, 'km', 'euclidean')
 #     gc.collect()
@@ -275,33 +269,29 @@ mod_paths = sorted([mod_path for mod_path in Path(models_dir).glob('d2v*.model')
 #     gc.collect()
 #     main(p, 'km', 'wmd')
 #     gc.collect()
-
-# print(f'Finished dataset. It took {datetime.now()-start}')
+    # main(p, 'km', 'l2')
+    # gc.collect()
 
 # DBSCAN
-
-start = datetime.now()
-for p in mod_paths:
-    
+# for p in mod_paths:
     # main(p, 'dbscan', 'euclidean')
     # gc.collect()
     # main(p, 'dbscan', 'cosine')
     # gc.collect()
-    main(p, 'dbscan', 'wmd')
-    gc.collect()
-
-print(f'Finished dataset. It took {datetime.now()-start}')
-
+    # main(p, 'dbscan', 'wmd')
+    # gc.collect()
+    # main(p, 'dbscan', 'l2')
+    # gc.collect()
 
 # HDBSCAN
-
-# start = datetime.now()
 # for p in mod_paths[2:]:
     # main(p, 'hdbscan', 'euclidean')
     # gc.collect()
     # main(p, 'hdbscan', 'cosine')
     # gc.collect()
 #     main(p, 'hdbscan', 'wmd')
-#     gc.collect()
-# print(f'Finished all datasets. Took {datetime.now()-start}')
+#     gc.collect()_
+    # main(p, 'hdbscan', 'l2')
+    # gc.collect()
 
+print(f'Finished all datasets. Took {datetime.now()-start}')

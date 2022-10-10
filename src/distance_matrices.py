@@ -23,40 +23,59 @@ from gensim.models.doc2vec import Doc2Vec
 from sklearn.metrics import pairwise_distances
 
 
-def get_euclidean_distance(path, file, gpu):
+def get_distance(path, file, metric, gpu):
     if not file.is_file():
         model = Doc2Vec.load(path)
         data = model.dv.vectors.astype(np.float64)
         print('Distance matrix not yet calculated. Attempting to obtain it.')
         if gpu == 1:
-            distances = gpu_pairwise_distances(data, metric='euclidean')
+            distances = gpu_pairwise_distances(data, metric=metric)
         else:
-            distances = pairwise_distances(data, metric='euclidean')
+            distances = pairwise_distances(data, metric=metric)
         np.save(file, distances)
         print('Distance Matrix saved')
     else:
-        print("Euclidean distance matrix already calculated!")
+        print(f"{metric.capitalize()} distance matrix already calculated!")
         distances = np.load(file)
     
     return distances
 
 
-def get_cosine_distance(path, file, gpu):
-    if not file.is_file():
-        model = Doc2Vec.load(path)
-        data = model.dv.vectors.astype(np.float64)
-        print('Distance matrix not yet calculated. Attempting to obtain it.')
-        if gpu == 1:
-            distances = gpu_pairwise_distances(data, metric='cosine')
-        else:
-            distances = pairwise_distances(data, metric='cosine')
-        np.save(file, distances)
-        print('Distance Matrix saved')
-    else:
-        print("Cosine distance matrix already calculated!")
-        distances = np.load(file)
+
+# def get_euclidean_distance(path, file, gpu):
+#     if not file.is_file():
+#         model = Doc2Vec.load(path)
+#         data = model.dv.vectors.astype(np.float64)
+#         print('Distance matrix not yet calculated. Attempting to obtain it.')
+#         if gpu == 1:
+#             distances = gpu_pairwise_distances(data, metric='euclidean')
+#         else:
+#             distances = pairwise_distances(data, metric='euclidean')
+#         np.save(file, distances)
+#         print('Distance Matrix saved')
+#     else:
+#         print("Euclidean distance matrix already calculated!")
+#         distances = np.load(file)
     
-    return distances
+#     return distances
+
+
+# def get_cosine_distance(path, file, gpu):
+#     if not file.is_file():
+#         model = Doc2Vec.load(path)
+#         data = model.dv.vectors.astype(np.float64)
+#         print('Distance matrix not yet calculated. Attempting to obtain it.')
+#         if gpu == 1:
+#             distances = gpu_pairwise_distances(data, metric='cosine')
+#         else:
+#             distances = pairwise_distances(data, metric='cosine')
+#         np.save(file, distances)
+#         print('Distance Matrix saved')
+#     else:
+#         print("Cosine distance matrix already calculated!")
+#         distances = np.load(file)
+    
+#     return distances
 
 
 def get_wmd_distance(path, file, large_dim, ncomponents):
@@ -96,7 +115,7 @@ def main():
     ap.add_argument('-p', '--path', type=str, help='Model path')
     ap.add_argument(
         '-d', '--distance', default='euclidean', type=str,
-        help='Distance metric. Options are "euclidean", "cosine" and "wmd"')
+        help='Distance metric. Options are "euclidean", "cosine", "l2" and "wmd"')
     ap.add_argument('-g', '--gpu', default=1, type=int, help='Calculate with GPU (1) or CPU (0)')
 
     args = ap.parse_args()
@@ -111,10 +130,12 @@ def main():
 
     print(f"Attempting to obtain {args.distance.capitalize()} distance matrix from", filename)
 
-    if args.distance == 'euclidean':
-        distances = get_euclidean_distance(args.path, dist_file, gpu)
-    elif args.distance == 'cosine':
-        distances = get_cosine_distance(args.path, dist_file, gpu)
+    if args.distance != 'wmd':
+        distances = get_distance(args.path, dist_file, args.distance, gpu)
+    # if args.distance == 'euclidean':
+    #     distances = get_euclidean_distance(args.path, dist_file, gpu)
+    # elif args.distance == 'cosine':
+    #     distances = get_cosine_distance(args.path, dist_file, gpu)
     else:
         large_dim = False
         size = Path(args.path).stem.split('_')[-1]
