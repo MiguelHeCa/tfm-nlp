@@ -142,7 +142,7 @@ def get_hdbscan(data, dataset, distance, min_clt_size, min_samples):
 
 
 def evaluate_cluster(data, labels, distance, method, n_clusters=None):
-    
+
     results = {}
 
     if distance == 'wmd':
@@ -273,15 +273,15 @@ start = datetime.now()
     # gc.collect()
 
 # DBSCAN
-for p in mod_paths:
+# for p in mod_paths:
     # main(p, 'dbscan', 'euclidean')
     # gc.collect()
     # main(p, 'dbscan', 'cosine')
     # gc.collect()
     # main(p, 'dbscan', 'wmd')
     # gc.collect()
-    main(p, 'dbscan', 'l2')
-    gc.collect()
+    # main(p, 'dbscan', 'l2')
+    # gc.collect()
 
 # HDBSCAN
 # for p in mod_paths[2:]:
