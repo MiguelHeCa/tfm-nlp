@@ -9,8 +9,6 @@
 """
 Clustering words with KMeans, DBSCAN or HDBSCAN
 """
-
-import argparse
 import csv
 import gc
 import pickle as pkl
@@ -72,12 +70,13 @@ def get_kmeans(data, dataset, distance, n_clusters):
     if labels_file.is_file():
         labels = load_labels(labels_file)
     else:
-        distance_file = Path(data_dir, distance, parse_distance_file(dataset, distance))
+        # distance_file = Path(data_dir, distance, parse_distance_file(dataset, distance))
         
-        if distance_file.is_file():
-            data = np.load(distance_file)
-        else:
-            print(f'{distance.capitalize()} distance matrix not found.')
+        # if distance_file.is_file():
+            # data = np.load(distance_file)
+        # else:
+            # print(f'{distance.capitalize()} distance matrix not found.')
+
         
         km = KMeans(n_clusters=n_clusters)
         km.fit(data)
@@ -88,7 +87,7 @@ def get_kmeans(data, dataset, distance, n_clusters):
 
 
 def get_dbscan(data, dataset, distance, epsilon, min_pts):
-    labels_file = Path(labels_dir, f'labels_dbscan_{dataset}_{epsilon}_{min_pts:02d}_{distance}.pkl')
+    labels_file = Path(labels_dir, f'labels_dbscan_{dataset}_{str(epsilon)[:7]}_{min_pts:02d}_{distance}.pkl')
     if labels_file.is_file():
         labels = load_labels(labels_file)
     else:
@@ -145,7 +144,7 @@ def evaluate_cluster(data, labels, distance, method, n_clusters=None):
 
     results = {}
 
-    if distance == 'wmd':
+    if distance == 'wmd' or distance == 'km':
         distance = 'euclidean'
     
     if method != 'km':
@@ -213,7 +212,7 @@ def main(path, method, distance, **kwargs):
     t0 = datetime.now()
 
     if method=='km':
-        for nclust in range(2,51): # range(21,101)
+        for nclust in range(6,21): # range(2,51), range(21,101) range(2,6)
             print(f'Performing {method} and evaluating for {dataset} points with {nclust} clusters')
             labels = get_kmeans(data, dataset, distance, nclust)
             get_results(data, filename, labels, dataset, distance, method, n_clusters=nclust)
@@ -231,8 +230,8 @@ def main(path, method, distance, **kwargs):
                 gc.collect()
 
     elif method=='hdbscan':
-        mcs_range = [mcs for mcs in range(2,10)]
-        min_samples_range = [ms for ms in range(2,25)]
+        mcs_range = [mcs for mcs in range(2,6)] # range(2,10)
+        min_samples_range = [ms for ms in range(21,25)] #  range(2,25)
         for mcs in mcs_range:
             for minsample in min_samples_range:
                 print(f'Performing {method} and evaluating for {dataset} points with {mcs} minimum cluster size and {minsample} minimum sample size')
@@ -245,8 +244,8 @@ def main(path, method, distance, **kwargs):
 
 
 data_dir = Path('data/interim')
-labels_dir = Path(data_dir, 'labels_2')
-eval_dir = Path(data_dir, 'evals_4')
+labels_dir = Path(data_dir, 'labels_3')
+eval_dir = Path(data_dir, 'evals_5')
 models_dir = Path('models')
 nn_dir = Path(data_dir, 'nn')
 
@@ -262,15 +261,9 @@ start = datetime.now()
 #     print(epsilons)
 
 # KMeans
-# for p in mod_paths[2:]:
+# for p in mod_paths:
 #     main(p, 'km', 'euclidean')
 #     gc.collect()
-#     main(p, 'km', 'cosine')
-#     gc.collect()
-#     main(p, 'km', 'wmd')
-#     gc.collect()
-    # main(p, 'km', 'l2')
-    # gc.collect()
 
 # DBSCAN
 # for p in mod_paths:
@@ -284,13 +277,13 @@ start = datetime.now()
     # gc.collect()
 
 # HDBSCAN
-# for p in mod_paths[2:]:
+for p in mod_paths[2:]:
     # main(p, 'hdbscan', 'euclidean')
     # gc.collect()
     # main(p, 'hdbscan', 'cosine')
     # gc.collect()
-#     main(p, 'hdbscan', 'wmd')
-#     gc.collect()_
+    main(p, 'hdbscan', 'wmd')
+    gc.collect()
     # main(p, 'hdbscan', 'l2')
     # gc.collect()
 
